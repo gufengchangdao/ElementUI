@@ -2,7 +2,10 @@
 
 项目网址：[ElementUI](https://github.com/gufengchangdao/ElementUI)
 
+Gitee地址：[ElementUI](https://gitee.com/vsroom/ElementUI.git)
+
 README文件飞书链接：[Swing仿饿了么组件库](https://riw8lxejdn.feishu.cn/docx/Yoszdo08qooCAJxOKlQcS4hJnTg)
+
 
 ## 前言
 
@@ -38,15 +41,15 @@ miglayout 功能强大的布局管理器
 
 ```Java
 EventQueue.invokeLater(()->{
-		// 创建计时源并启动
-		SwingTimerTimingSource ts=new SwingTimerTimingSource();
-		Animator.setDefaultTimingSource(ts);
-		ts.init();
+    // 创建计时源并启动
+    SwingTimerTimingSource ts=new SwingTimerTimingSource();
+    Animator.setDefaultTimingSource(ts);
+    ts.init();
 
-		//注册UI
-		// FlatLightLaf.setup();
+    //注册UI
+    // FlatLightLaf.setup();
 
-		//启动程序
+    //启动程序
 });
 ```
 
