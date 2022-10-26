@@ -144,7 +144,7 @@ EventQueue.invokeLater(()->{
        │  └─lab                            一些有趣的代码
        └─resources                         测试用的资源
 ```
-
+ 
 ## 运行预览
 
 - 演示所使用的美化包为**flatlaf**，项目中不要求使用该依赖
