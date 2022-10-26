@@ -1,0 +1,103 @@
+TOKEN_PACKAGE
+
+import com.component.radiance.common.api.icon.AbstractRadianceIcon;
+import com.component.radiance.common.api.icon.RadianceIcon;
+import com.component.radiance.common.api.icon.RadianceIconUIResource;
+
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.geom.*;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.lang.ref.WeakReference;
+import java.util.Base64;
+
+public class TOKEN_CLASSNAME extends AbstractRadianceIcon {
+	/**
+	 * @see AbstractRadianceIcon#AbstractRadianceIcon()
+	 */
+	public TOKEN_CLASSNAME() {
+		this.width = (int) getOrigWidth();
+		this.height = (int) getOrigHeight();
+	}
+
+	TOKEN_RASTER_CODE
+
+	TOKEN_PAINTING_CODE
+
+	protected void innerPaint(Graphics2D g) {
+		float origAlpha = getOrigAlpha(g);
+
+		TOKEN_PAINTING_INVOCATIONS
+
+		super.innerPaint(g);
+	}
+
+	/**
+	 * @see AbstractRadianceIcon#getOrigX()
+	 */
+	public static double getOrigX() {
+		return TOKEN_ORIG_X;
+	}
+
+	/**
+	 * @see AbstractRadianceIcon#getOrigY()
+	 */
+	public static double getOrigY() {
+		return TOKEN_ORIG_Y;
+	}
+
+	/**
+	 * @see AbstractRadianceIcon#getOrigWidth()
+	 */
+	public static double getOrigWidth() {
+		return TOKEN_ORIG_WIDTH;
+	}
+
+	/**
+	 * @see AbstractRadianceIcon#getOrigHeight()
+	 */
+	public static double getOrigHeight() {
+		return TOKEN_ORIG_HEIGHT;
+	}
+
+	@Override
+	public boolean supportsColorFilter() {
+		return TOKEN_SUPPORTS_COLOR_FILTER;
+	}
+
+	/**
+	 * @see AbstractRadianceIcon#of(int, int)
+	 */
+	public static RadianceIcon of(int width, int height) {
+		TOKEN_CLASSNAME base = new TOKEN_CLASSNAME();
+		base.width = width;
+		base.height = height;
+		return base;
+	}
+
+	/**
+	 * @see AbstractRadianceIcon#uiResourceOf(int, int)
+	 */
+	public static RadianceIconUIResource uiResourceOf(int width, int height) {
+		TOKEN_CLASSNAME base = new TOKEN_CLASSNAME();
+		base.width = width;
+		base.height = height;
+		return new RadianceIconUIResource(base);
+	}
+
+	@Override
+	public synchronized void paintIcon(Component c, Graphics g, int x, int y) {
+		Graphics2D g2 = paint(c, g, x, y, getOrigWidth(), getOrigHeight(), getOrigX(), getOrigY());
+		innerPaint(g2);
+		g2.dispose();
+	}
+
+	/**
+	 * @see AbstractRadianceIcon#factory()
+	 */
+	public static Factory factory() {
+		return TOKEN_CLASSNAME::new;
+	}
+}
