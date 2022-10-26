@@ -24,12 +24,12 @@ README文件飞书链接：[Swing仿饿了么组件库](https://riw8lxejdn.feish
 
 **所用依赖**
 
-```Java
+```text
 animated-transitions 便捷地创建动画
-		timingframework 为大量组件提供平滑转换，过渡动画使用
-		batik-all 解析svg
-		swingx 提供一些功能强大的组件
-		miglayout 功能强大的布局管理器
+timingframework 为大量组件提供平滑转换，过渡动画使用
+batik-all 解析svg
+swingx 提供一些功能强大的组件
+miglayout 功能强大的布局管理器
 ```
 
 **代码中使用ElementUI**
@@ -47,7 +47,7 @@ EventQueue.invokeLater(()->{
 		// FlatLightLaf.setup();
 
 		//启动程序
-		});
+});
 ```
 
 **目录结构**
@@ -152,12 +152,13 @@ EventQueue.invokeLater(()->{
 
 
 1. Basic
+
 ![](https://i.niupic.com/images/2022/10/26/a9Pt.png)
 ![](https://i.niupic.com/images/2022/10/26/a9Px.png)
 ![](https://i.niupic.com/images/2022/10/26/a9Ps.png)
 ![](https://i.niupic.com/images/2022/10/26/a9Py.png)
 
-3. form
+2. form
 
 ![](https://i.niupic.com/images/2022/10/26/a9Ph.png)
 ![](https://i.niupic.com/images/2022/10/26/a9Pz.png)
@@ -169,11 +170,11 @@ EventQueue.invokeLater(()->{
 
 
 
-1. navigation
+3. navigation
 
 ![](https://i.niupic.com/images/2022/10/26/a9Pi.png)
 
-1. notice
+4. notice
 
 ![](https://i.niupic.com/images/2022/10/26/a9Pk.png)
 ![](https://i.niupic.com/images/2022/10/26/a9PC.png)
@@ -184,14 +185,14 @@ EventQueue.invokeLater(()->{
 ![](https://i.niupic.com/images/2022/10/26/a9PD.png)
 
 
-1. Data
+5. Data
 
 ![](https://i.niupic.com/images/2022/10/26/a9Pl.png)
 ![](https://i.niupic.com/images/2022/10/26/a9PF.png)
 ![](https://i.niupic.com/images/2022/10/26/a9Pm.png)
 
 
-1. other
+6. other
 
 ![](https://i.niupic.com/images/2022/10/26/a9PG.png)
 ![](https://i.niupic.com/images/2022/10/26/a9PL.png)
