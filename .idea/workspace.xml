@@ -10,14 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee1abc60-5042-4165-bc9b-3cb5daffcf07" name="变更" comment="1.0">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/font/ZhanKuXiaoLOGOTi-2.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/font/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/font/FontTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/others/collapse/ExpansionContentPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/others/collapse/ExpansionPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/other/collapse/ExpansionPanelTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lab/ActiveWindowSelectionHighlight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/font/FontUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/font/FontUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/VerticalLabelUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/others/collapse/CollapsePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/others/collapse/CollapsePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +52,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/MyRoom/ProjectCollection/JAVA/ElementUI/src/main/resources",
+    "last_opened_file_path": "D:/MyRoom/ProjectCollection/JAVA/ElementUI/src/test/java/lab",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "工件",
     "project.structure.proportion": "0.15",
@@ -76,7 +76,20 @@
       <recent name="D:\MyRoom\ProjectCollection\JAVA\ElementUI\src\main\resources\font" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.FontTest">
+  <component name="RunManager" selected="应用程序.ExpansionPanelTest">
+    <configuration name="ExpansionPanelTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.component.other.collapse.ExpansionPanelTest" />
+      <module name="ElementUI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.component.other.collapse.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FontTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.component.font.FontTest" />
       <module name="ElementUI" />
@@ -93,19 +106,6 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ElementUI" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpinnerDemo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lab.SpinnerDemo3" />
-      <module name="ElementUI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lab.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -138,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.ExpansionPanelTest" />
         <item itemvalue="应用程序.FontTest" />
         <item itemvalue="应用程序.Main" />
         <item itemvalue="应用程序.VerticalLabelUI" />
         <item itemvalue="应用程序.TextComponentDemo" />
-        <item itemvalue="应用程序.SpinnerDemo3" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +161,8 @@
       <workItem from="1666841850951" duration="18000" />
       <workItem from="1666850657388" duration="668000" />
       <workItem from="1666860161061" duration="791000" />
-      <workItem from="1666870688840" duration="2483000" />
+      <workItem from="1666870688840" duration="2783000" />
+      <workItem from="1666878355775" duration="6085000" />
     </task>
     <task id="LOCAL-00001" summary="1.0">
       <created>1666786717808</created>
@@ -296,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666851150657</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="1.0">
+      <created>1666874062421</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1666874062421</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

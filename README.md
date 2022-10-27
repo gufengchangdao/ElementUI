@@ -5,10 +5,10 @@
 Gitee地址：[ElementUI](https://gitee.com/vsroom/ElementUI.git)
 
 README文件飞书链接：[ElementUI](https://riw8lxejdn.feishu.cn/docx/Yoszdo08qooCAJxOKlQcS4hJnTg)
-  
- 
+
+
 ## 前言
- 
+
 1. 该项目是参照[饿了么组件库](https://element.eleme.cn/#/zh-CN)的样式所开发的一套组件库，但不仅限于饿了么中出现的组件
 2. 该项目可运行在java 1.8以及以上版本
 3. 这是ElementUI的第一版，由于个人精力有限，部分组件方法可能存在问题，希望发现问题的开发者能在GitHub上提交 Issues，我有时间会进行修改，也希望有建议的开发者也能和我分享宝贵建议。
@@ -146,9 +146,9 @@ EventQueue.invokeLater(()->{
        │  └─lab                            一些有趣的代码
        └─resources                         测试用的资源
 ```
- 
+
 ## 运行预览
- 
+
 - 演示所使用的美化包为**flatlaf**，项目中不要求使用该依赖
 - 该示例只展示扩展的组件，其实swingx依赖中还有很多好用的组件
 
@@ -210,3 +210,8 @@ EventQueue.invokeLater(()->{
 ![](https://i.niupic.com/images/2022/10/26/a9PN.png)
 ![](https://i.niupic.com/images/2022/10/26/a9PO.png)
 
+
+
+7. 字体
+
+resources下有两种字体，项目中并未使用，开发者可以使用FontUtil加载字体。同时字体也可以替代SVG充当图标，也许在图文混合的场景下使用更方便。
