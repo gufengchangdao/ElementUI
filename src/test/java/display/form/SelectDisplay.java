@@ -1,7 +1,7 @@
 package display.form;
 
 import com.component.form.select.CascaderSelector;
-import display.util.SwingDisplayUtil;
+import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;
 
 import java.awt.*;
@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class SelectDisplay {
 	public static void main(String[] args) {
-		Container p = SwingDisplayUtil.init(new MigLayout("center"));
+		Container p = SwingTestUtil.init(new MigLayout("center"));
 
 		HashMap<String, Map<String, ?>> childNode2 = new HashMap<>();
 		childNode2.put("大苹果", null);
@@ -31,6 +31,6 @@ public class SelectDisplay {
 
 		p.add(main);
 
-		SwingDisplayUtil.test();
+		SwingTestUtil.test();
 	}
 }

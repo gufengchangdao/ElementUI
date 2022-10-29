@@ -3,7 +3,7 @@ package display.form;
 import com.component.form.rate.RateSelector;
 import com.component.svg.icon.fill.SwordSvg;
 import com.component.svg.icon.fill.ThumbsUpSvg;
-import display.util.SwingDisplayUtil;
+import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;
 
 import java.awt.*;
@@ -11,7 +11,7 @@ import java.util.Arrays;
 
 public class RateDisplay {
 	public static void main(String[] args) {
-		Container p = SwingDisplayUtil.init(new MigLayout("wrap 1, center"));
+		Container p = SwingTestUtil.init(new MigLayout("wrap 1, center"));
 
 		RateSelector r1 = new RateSelector();
 		r1.setSelectedCount(5);
@@ -39,6 +39,6 @@ public class RateDisplay {
 		r4.setTipList(Arrays.asList("0分", "1分", "2分", "3分", "4分", "超级满分结果"));
 		p.add(r4);
 
-		SwingDisplayUtil.test();
+		SwingTestUtil.test();
 	}
 }

@@ -2,7 +2,7 @@ package display.other;
 
 import com.component.others.carousel.HorizontalCarouselPanel;
 import com.component.util.ImageUtil;
-import display.util.SwingDisplayUtil;
+import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;
 
 import javax.imageio.ImageIO;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class CarouselDisplay {
 	public static void main(String[] args) throws IOException {
-		Container p = SwingDisplayUtil.init(new MigLayout("", "grow, center"));
+		Container p = SwingTestUtil.init(new MigLayout("", "grow, center"));
 
 		ArrayList<JLabel> list = new ArrayList<>();
 		for (int i = 1; i <= 4; i++) {
@@ -29,6 +29,6 @@ public class CarouselDisplay {
 		c.setBorder(BorderFactory.createLineBorder(Color.RED));
 		p.add(c);
 
-		SwingDisplayUtil.test();
+		SwingTestUtil.test();
 	}
 }

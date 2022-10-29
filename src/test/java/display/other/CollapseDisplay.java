@@ -2,7 +2,7 @@ package display.other;
 
 import com.component.others.collapse.CollapseItem;
 import com.component.others.collapse.CollapsePanel;
-import display.util.SwingDisplayUtil;
+import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;
 
 import java.awt.*;
@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class CollapseDisplay {
 	public static void main(String[] args) {
-		Container p = SwingDisplayUtil.init(new MigLayout("wrap 1", "grow, center"));
+		Container p = SwingTestUtil.init(new MigLayout("wrap 1", "grow, center"));
 
 		ArrayList<CollapseItem> list = new ArrayList<>();
 		list.add(new CollapseItem("一致性 Consistency",
@@ -29,6 +29,6 @@ public class CollapseDisplay {
 		CollapsePanel c = new CollapsePanel(list);
 		p.add(c);
 
-		SwingDisplayUtil.test();
+		SwingTestUtil.test();
 	}
 }

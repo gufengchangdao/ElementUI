@@ -2,7 +2,7 @@ package display.basic;
 
 import com.component.basic.color.ColorUtil;
 import com.component.basic.layout.ColumnsLayout;
-import display.util.SwingDisplayUtil;
+import com.component.util.SwingTestUtil;
 
 import javax.swing.*;
 import java.awt.*;
@@ -10,7 +10,7 @@ import java.awt.*;
 public class ColumnsLayoutDisplay {
 	public static void main(String[] args) {
 		EventQueue.invokeLater(() -> {
-			SwingDisplayUtil.init(new FlowLayout());
+			SwingTestUtil.init(new FlowLayout());
 			ColumnsLayout layout = new ColumnsLayout(600, 5, 5);
 			JPanel panel = new JPanel(layout);
 			panel.add(new JButton(" "), (Integer) 24);
@@ -30,7 +30,7 @@ public class ColumnsLayoutDisplay {
 			panel.add(new JButton(" "), (Integer) 4);
 			panel.add(new JButton(" "), (Integer) 4);
 			panel.setBorder(BorderFactory.createLineBorder(ColorUtil.INFO));
-			SwingDisplayUtil.test(panel);
+			SwingTestUtil.test(panel);
 		});
 	}
 }

@@ -29,7 +29,7 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package lab;
+package lab.component.text;
 /*
  * TextComponentDemo.java requires one additional file:
  *   DocumentSizeFilter.java
@@ -139,27 +139,25 @@ public class TextComponentDemo extends JFrame {
 		//on the event dispatch thread.
 		protected void displaySelectionInfo(final int dot,
 		                                    final int mark) {
-			SwingUtilities.invokeLater(new Runnable() {
-				public void run() {
-					if (dot == mark) {  // no selection
-						try {
-							Rectangle caretCoords = textPane.modelToView(dot);
-							//Convert it to view coordinates.
-							setText("caret: text position: " + dot
-									+ ", view location = ["
-									+ caretCoords.x + ", "
-									+ caretCoords.y + "]"
-									+ newline);
-						} catch (BadLocationException ble) {
-							setText("caret: text position: " + dot + newline);
-						}
-					} else if (dot < mark) {
-						setText("selection from: " + dot
-								+ " to " + mark + newline);
-					} else {
-						setText("selection from: " + mark
-								+ " to " + dot + newline);
+			SwingUtilities.invokeLater(() -> {
+				if (dot == mark) {  // no selection
+					try {
+						Rectangle caretCoords = textPane.modelToView(dot);
+						//Convert it to view coordinates.
+						setText("caret: text position: " + dot
+								+ ", view location = ["
+								+ caretCoords.x + ", "
+								+ caretCoords.y + "]"
+								+ newline);
+					} catch (BadLocationException ble) {
+						setText("caret: text position: " + dot + newline);
 					}
+				} else if (dot < mark) {
+					setText("selection from: " + dot
+							+ " to " + mark + newline);
+				} else {
+					setText("selection from: " + mark
+							+ " to " + dot + newline);
 				}
 			});
 		}
@@ -292,7 +290,7 @@ public class TextComponentDemo extends JFrame {
 	}
 
 	protected void initDocument() {
-		String initString[] =
+		String[] initString =
 				{"Use the mouse to place the caret.",
 						"Use the edit menu to cut, copy, paste, and select text.",
 						"Also to undo and redo changes.",
@@ -342,8 +340,7 @@ public class TextComponentDemo extends JFrame {
 	private HashMap<Object, Action> createActionTable(JTextComponent textComponent) {
 		HashMap<Object, Action> actions = new HashMap<Object, Action>();
 		Action[] actionsArray = textComponent.getActions();
-		for (int i = 0; i < actionsArray.length; i++) {
-			Action a = actionsArray[i];
+		for (Action a : actionsArray) {
 			actions.put(a.getValue(Action.NAME), a);
 		}
 		return actions;
@@ -428,12 +425,10 @@ public class TextComponentDemo extends JFrame {
 	public static void main(String[] args) {
 		//Schedule a job for the event dispatch thread:
 		//creating and showing this application's GUI.
-		SwingUtilities.invokeLater(new Runnable() {
-			public void run() {
-				//Turn off metal's use of bold fonts
-				UIManager.put("swing.boldMetal", Boolean.FALSE);
-				createAndShowGUI();
-			}
+		SwingUtilities.invokeLater(() -> {
+			//Turn off metal's use of bold fonts
+			UIManager.put("swing.boldMetal", Boolean.FALSE);
+			createAndShowGUI();
 		});
 	}
 }

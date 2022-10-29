@@ -3,7 +3,7 @@ package display.form;
 import com.component.form.upload.FileUploadItem;
 import com.component.form.upload.FileUploadPanel;
 import com.component.form.upload.ImageUploadButton;
-import display.util.SwingDisplayUtil;
+import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
@@ -12,7 +12,7 @@ import java.io.File;
 
 public class UploadDisplay {
 	public static void main(String[] args) {
-		Container p = SwingDisplayUtil.init(new MigLayout("wrap 1,center"));
+		Container p = SwingTestUtil.init(new MigLayout("wrap 1,center"));
 
 
 		JList<File> list = new JList<>(new File[]{new File("file1.png"), new File("file2.png"), new File("file3.png")});
@@ -23,6 +23,6 @@ public class UploadDisplay {
 
 		p.add(new ImageUploadButton());
 
-		SwingDisplayUtil.test();
+		SwingTestUtil.test();
 	}
 }

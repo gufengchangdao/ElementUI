@@ -13,6 +13,7 @@ README文件飞书链接：[ElementUI](https://riw8lxejdn.feishu.cn/docx/Yoszdo0
 2. 该项目可运行在java 1.8以及以上版本
 3. 这是ElementUI的第一版，由于个人精力有限，部分组件方法可能存在问题，希望发现问题的开发者能在GitHub上提交 Issues，我有时间会进行修改，也希望有建议的开发者也能和我分享宝贵建议。
 4. 图标建议使用svg转换后代码使用，便于保证图标缩放后的质量，并且可以更改图标的颜色。因为建议配合UI设计工具使用(不建议使用即时设计，即时设计导出的SVG存在一些问题)，我用的是Figma，好用程度只能说平生所见。
+5. 我[转换好的一部分图标](https://riw8lxejdn.feishu.cn/file/boxcnW7F5ptU5lVTckndwsypPxb)，项目中使用的图标皆从里面取得，需要的可以下载
 
 ### License
 
@@ -55,9 +56,6 @@ EventQueue.invokeLater(()->{
 **目录结构**
 
 ```Plain
-├─icon                                    未引入的处理好的图标类，不在项目中，需要时可以拖到项目中
-│  ├─fill                                 填充图标
-│  └─regular                              常规图标
 ├─libs
 ├─src
    ├─main

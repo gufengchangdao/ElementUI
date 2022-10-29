@@ -1,7 +1,7 @@
 package display.form;
 
 import com.component.form.picket.DatePicker;
-import display.util.SwingDisplayUtil;
+import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;
 import org.jdesktop.swingx.JXMonthView;
 
@@ -11,7 +11,7 @@ import java.util.Calendar;
 
 public class PicketDisplay {
 	public static void main(String[] args) {
-		Container p = SwingDisplayUtil.init(new MigLayout("center"));
+		Container p = SwingTestUtil.init(new MigLayout("center"));
 		DatePicker view = new DatePicker(10, "选择日期");
 		JXMonthView monthView = view.getMonthView();
 		// 是否可遍历
@@ -26,6 +26,6 @@ public class PicketDisplay {
 		});
 
 		p.add(view);
-		SwingDisplayUtil.test();
+		SwingTestUtil.test();
 	}
 }

@@ -3,14 +3,14 @@ package display.basic;
 import com.component.basic.color.ColorUtil;
 import com.component.basic.link.LinkButton;
 import com.component.svg.icon.regular.SwordSvg;
-import display.util.SwingDisplayUtil;
+import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;
 
 import java.awt.*;
 
 public class LinkDisplay {
 	public static void main(String[] args) {
-		Container p = SwingDisplayUtil.init(new MigLayout("wrap 6", "", ""));
+		Container p = SwingTestUtil.init(new MigLayout("wrap 6", "", ""));
 
 		p.add(new LinkButton("默认链接", null, ColorUtil.PRIMARY));
 		p.add(new LinkButton("主要链接", ColorUtil.PRIMARY, null));
@@ -32,6 +32,6 @@ public class LinkDisplay {
 
 		p.add(new LinkButton("宝剑", SwordSvg.of(16, 16), null, ColorUtil.PRIMARY));
 
-		SwingDisplayUtil.test();
+		SwingTestUtil.test();
 	}
 }

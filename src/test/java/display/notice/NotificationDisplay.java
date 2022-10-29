@@ -5,7 +5,6 @@ import com.component.notice.notification.NotificationComponent;
 import com.component.radiance.common.api.icon.RadianceIcon;
 import com.component.svg.icon.fill.XCircleSvg;
 import com.component.util.SwingTestUtil;
-import display.util.SwingDisplayUtil;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
@@ -15,7 +14,7 @@ import static com.component.notice.notification.NotificationFactory.openNotifica
 
 public class NotificationDisplay {
 	public static void main(String[] args) {
-		Container p = SwingDisplayUtil.init(new MigLayout("", "grow, center"));
+		Container p = SwingTestUtil.init(new MigLayout("", "grow, center"));
 
 		JComponent glassPane = (JComponent) SwingTestUtil.getFrame().getGlassPane();
 		glassPane.setLayout(null);
@@ -34,6 +33,6 @@ public class NotificationDisplay {
 		});
 		p.add(button);
 
-		SwingDisplayUtil.test();
+		SwingTestUtil.test();
 	}
 }

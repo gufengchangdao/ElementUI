@@ -4,6 +4,7 @@ import com.component.basic.button.ButtonFactory;
 import com.component.basic.color.ColorUtil;
 import com.component.form.input.TipInputField;
 import com.component.util.SwingTestUtil;
+import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,9 +15,6 @@ import java.io.File;
  */
 public class BatchProcessFrame extends JFrame {
 	private JFileChooser fc;
-	private JPanel topPanel = new JPanel(new BorderLayout());
-	private JPanel centerPanel = new JPanel();
-	private JScrollPane bottomPanel;
 	private JTextField dirField;
 	private JButton dirButton;
 	private JTextField targetField;
@@ -34,11 +32,17 @@ public class BatchProcessFrame extends JFrame {
 	private void initView() {
 		setTitle("svg批量转换工具");
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-		setSize(600, 500);
+		// setSize(600, 500);
 		Container contentPane = getContentPane();
-		contentPane.add(topPanel, BorderLayout.NORTH);
-		contentPane.add(centerPanel);
-		contentPane.add(bottomPanel, BorderLayout.SOUTH);
+		contentPane.setLayout(new MigLayout("wrap 2","grow"));
+		contentPane.add(dirField,"");
+		contentPane.add(dirButton);
+		contentPane.add(targetField,"");
+		contentPane.add(targetButton,"growx");
+		contentPane.add(packageField,"wrap");
+		contentPane.add(button,"span 2, center, wrap");
+		contentPane.add(new JScrollPane(logArea),"span 2, growx, h :350:");
+		pack();
 		setLocationRelativeTo(null);
 	}
 
@@ -54,30 +58,15 @@ public class BatchProcessFrame extends JFrame {
 		targetButton.setPreferredSize(new Dimension(160, 25));
 
 		packageField = new TipInputField(35, "类所在包名，例如 com.component");//类所在包名
-		JPanel panel1 = new JPanel(new FlowLayout(FlowLayout.LEFT));
-		panel1.add(dirField);
-		panel1.add(dirButton);
-		JPanel panel2 = new JPanel(new FlowLayout(FlowLayout.LEFT));
-		panel2.add(targetField);
-		panel2.add(targetButton);
-		JPanel panel3 = new JPanel(new FlowLayout(FlowLayout.LEFT));
-		panel3.add(packageField);
-		topPanel.add(panel1, BorderLayout.NORTH);
-		topPanel.add(panel2);
-		topPanel.add(panel3, BorderLayout.SOUTH);
 
 		// 中部分
 
 		button = ButtonFactory.createDefaultButton("转换", ColorUtil.SUCCESS);
 		button.setPreferredSize(new Dimension(100, 40));
 
-		centerPanel.add(button);
-
 		// 下部分
 		logArea = new JTextPane();
 		logArea.setContentType("text/html");
-		bottomPanel = new JScrollPane(logArea);
-		bottomPanel.setPreferredSize(new Dimension(600, 300));
 	}
 
 	private void addListener() {

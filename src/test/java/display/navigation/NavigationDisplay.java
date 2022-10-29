@@ -10,7 +10,7 @@ import com.component.navigation.tabs.CloseableTab;
 import com.component.navigation.tabs.CustomTabbedPaneUI;
 import com.component.svg.icon.regular.ArrowFatRightSvg;
 import com.component.svg.icon.regular.XCircleSvg;
-import display.util.SwingDisplayUtil;
+import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
@@ -24,7 +24,7 @@ import java.util.List;
 public class NavigationDisplay {
 	public static void main(String[] args) {
 		EventQueue.invokeLater(() -> {
-			Container p = SwingDisplayUtil.init(new MigLayout("wrap 1", "grow"));
+			Container p = SwingTestUtil.init(new MigLayout("wrap 1", "grow"));
 
 			p.add(new JLabel("面包屑"));
 			ArrayList<String> list = new ArrayList<>();
@@ -119,7 +119,7 @@ public class NavigationDisplay {
 			p.add(new StepsComponent(Arrays.asList("步骤1", "步骤2", "步骤3", "步骤4", "步骤5"),
 					XCircleSvg.class, 2, ColorUtil.SUCCESS, 70, false), "center");
 
-			SwingDisplayUtil.test();
+			SwingTestUtil.test();
 		});
 	}
 }

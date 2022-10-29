@@ -5,7 +5,6 @@ import com.component.common.template.X2Component;
 import com.component.notice.alert.AlertComponent;
 import com.component.notice.message.MessageFactory;
 import com.component.util.SwingTestUtil;
-import display.util.SwingDisplayUtil;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
@@ -13,7 +12,7 @@ import java.awt.*;
 
 public class MessageDisplay {
 	public static void main(String[] args) {
-		Container p = SwingDisplayUtil.init(new MigLayout("", "grow,center"));
+		Container p = SwingTestUtil.init(new MigLayout("", "grow,center"));
 
 		JLayeredPane panel = new JLayeredPane();
 		SwingTestUtil.getFrame().setGlassPane(panel);
@@ -34,6 +33,6 @@ public class MessageDisplay {
 		});
 		p.add(button);
 
-		SwingDisplayUtil.test();
+		SwingTestUtil.test();
 	}
 }

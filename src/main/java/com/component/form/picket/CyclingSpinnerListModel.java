@@ -29,28 +29,47 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package lab;
+package com.component.form.picket;
 
 import javax.swing.*;
 
-/* Used by InternalFrameDemo.java. */
-public class MyInternalFrame extends JInternalFrame {
-	static int openFrameCount = 0;
-	static final int xOffset = 30, yOffset = 30;
+/**
+ * 该SpinnerListModel只与Object数组一起工作，并且实现了循环(下一个值和上一个值从不为空)。
+ * 它还允许您可选地关联一个链接到此模型的旋转器模型，以便在发生循环时更新链接的旋转器模型。
+ */
+public class CyclingSpinnerListModel extends SpinnerListModel {
+	Object firstValue, lastValue;
+	SpinnerModel linkedModel = null;
 
-	public MyInternalFrame() {
-		super("Document #" + (++openFrameCount),
-				true, //resizable
-				true, //closable
-				true, //maximizable
-				true);//iconifiable
+	public CyclingSpinnerListModel(Object[] values) {
+		super(values);
+		firstValue = values[0];
+		lastValue = values[values.length - 1];
+	}
 
-		//...Create the GUI and put it in the window...
+	public void setLinkedModel(SpinnerModel linkedModel) {
+		this.linkedModel = linkedModel;
+	}
 
-		//...Then set the window size or call pack...
-		setSize(300, 300);
+	public Object getNextValue() {
+		Object value = super.getNextValue();
+		if (value == null) {
+			value = firstValue;
+			if (linkedModel != null) {
+				linkedModel.setValue(linkedModel.getNextValue());
+			}
+		}
+		return value;
+	}
 
-		//Set the window's location.
-		setLocation(xOffset * openFrameCount, yOffset * openFrameCount);
+	public Object getPreviousValue() {
+		Object value = super.getPreviousValue();
+		if (value == null) {
+			value = lastValue;
+			if (linkedModel != null) {
+				linkedModel.setValue(linkedModel.getPreviousValue());
+			}
+		}
+		return value;
 	}
 }

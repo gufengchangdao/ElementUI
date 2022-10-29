@@ -10,6 +10,8 @@ import java.awt.image.ColorConvertOp;
 import java.awt.image.ConvolveOp;
 import java.awt.image.Kernel;
 
+import static java.awt.image.ImageObserver.*;
+
 /**
  * 图像处理工具类
  */
@@ -211,5 +213,50 @@ public class ImageUtil {
 		c.paint(g);
 		g.dispose();
 		return img;
+	}
+
+	/**
+	 * 允许 JComboBox 展示GIF动画。
+	 * <p>
+	 * 不要求调用方法前icon已经添加进JComboBox，但必须保证 row 是正确的
+	 *
+	 * @param icon  GIF图标
+	 * @param combo 创建好的JComboBox
+	 * @param row   GIF图片所在下拉列表行索引
+	 * @return 原icon对象
+	 */
+	public static ImageIcon makeAnimatedIcon(ImageIcon icon, JComboBox<?> combo, int row) {
+		// Wastefulness: icon.setImageObserver(combo);
+		icon.setImageObserver((img, infoflags, x, y, w, h) -> {
+			if (combo.isShowing() && (infoflags & (FRAMEBITS | ALLBITS)) != 0) {
+				// 重绘gif图片所在行
+				RepaintUtil.repaint(combo, row);
+			}
+			return (infoflags & (ALLBITS | ABORT)) == 0;
+		});
+		return icon;
+	}
+
+	/**
+	 * 允许 JTable 展示GIF动画。
+	 *
+	 * @param icon  GIF图标
+	 * @param table 表格
+	 * @param row   模型数据中图标所在行
+	 * @param col   模型数据中图标所在列
+	 * @return 原icon对象
+	 */
+	public static ImageIcon makeImageIcon(ImageIcon icon, JTable table, int row, int col) {
+		// Wastefulness: icon.setImageObserver((ImageObserver) table);
+		icon.setImageObserver((img, infoflags, x, y, w, h) -> {
+			if (!table.isShowing()) {
+				return false;
+			}
+			if ((infoflags & (FRAMEBITS | ALLBITS)) != 0) {
+				RepaintUtil.repaint(table, row, col);
+			}
+			return (infoflags & (ALLBITS | ABORT)) == 0;
+		});
+		return icon;
 	}
 }

@@ -3,7 +3,7 @@ package display.data;
 import com.component.data.progress.CircleProgress;
 import com.component.data.progress.LineRoundedProgress;
 import com.component.svg.icon.regular.CircleWavyCheckSvg;
-import display.util.SwingDisplayUtil;
+import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 public class ProgressDisplay {
 	public static void main(String[] args) {
 		EventQueue.invokeLater(() -> {
-			Container p = SwingDisplayUtil.init(new MigLayout("wrap 2", "grow"));
+			Container p = SwingTestUtil.init(new MigLayout("wrap 2", "grow"));
 
 			CircleProgress progress = new CircleProgress();
 
@@ -47,7 +47,7 @@ public class ProgressDisplay {
 			}).start();
 			p.add(pgbar, "center");
 
-			SwingDisplayUtil.test();
+			SwingTestUtil.test();
 		});
 	}
 }

@@ -1,7 +1,7 @@
 package display.other;
 
 import com.component.others.card.CardPanel;
-import display.util.SwingDisplayUtil;
+import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class CardDisplay {
 	public static void main(String[] args) {
-		Container p = SwingDisplayUtil.init(new MigLayout("", "grow, center"));
+		Container p = SwingTestUtil.init(new MigLayout("", "grow, center"));
 
 		ArrayList<JButton> buttons = new ArrayList<>();
 		buttons.add(new JButton("操作按钮"));
@@ -26,6 +26,6 @@ public class CardDisplay {
 		c.setPreferredSize(s);
 		p.add(c);
 
-		SwingDisplayUtil.test();
+		SwingTestUtil.test();
 	}
 }

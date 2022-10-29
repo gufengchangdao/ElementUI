@@ -5,7 +5,7 @@ import com.component.form.input.*;
 import com.component.form.input.compound.LabelComboBox;
 import com.component.form.input.compound.LabelInputTextField;
 import com.component.form.input.compound.LabelIntegerInputField;
-import display.util.SwingDisplayUtil;
+import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
@@ -16,7 +16,7 @@ import java.util.Vector;
 
 public class InputDisplay {
 	public static void main(String[] args) {
-		Container p = SwingDisplayUtil.init(new MigLayout("wrap 1", "grow"));
+		Container p = SwingTestUtil.init(new MigLayout("wrap 1", "grow"));
 
 		p.add(new JLabel("带有输入提示的输入框"));
 		TipInputField tipInputField = new TipInputField("");
@@ -70,6 +70,6 @@ public class InputDisplay {
 		LabelIntegerInputField labelIntegerInputField = new LabelIntegerInputField("原价原价");
 		p.add(labelIntegerInputField, "center");
 
-		SwingDisplayUtil.test();
+		SwingTestUtil.test();
 	}
 }

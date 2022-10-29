@@ -9,9 +9,9 @@ import java.util.List;
 import static java.lang.Math.max;
 
 /**
- * 折叠面板
+ * 手风琴面板
  */
-public class ExpansionPanel extends JPanel {
+public class AccordionPanel extends JPanel {
 	/**
 	 * 每一个子面板
 	 */
@@ -57,9 +57,9 @@ public class ExpansionPanel extends JPanel {
 	/**
 	 * 使用默认图标色的折叠面板
 	 *
-	 * @see #ExpansionPanel(List, List, Color, Color)
+	 * @see #AccordionPanel(List, List, Color, Color)
 	 */
-	public ExpansionPanel(List<JPanel> panels, List<String> titles,
+	public AccordionPanel(List<JPanel> panels, List<String> titles,
 	                      Color titleBeginBG, Color titleEndBG) {
 		this(panels, titles, titleBeginBG, titleEndBG, null, true);
 	}
@@ -72,7 +72,7 @@ public class ExpansionPanel extends JPanel {
 	 * @param iconColor    标题左侧箭头颜色，为null时使用默认颜色
 	 * @param iconFill     为true时使用填充图标，为false使用常规图标
 	 */
-	public ExpansionPanel(List<JPanel> panels, List<String> titles,
+	public AccordionPanel(List<JPanel> panels, List<String> titles,
 	                      Color titleBeginBG, Color titleEndBG, Color iconColor, boolean iconFill) {
 		ArrayList<Item> list = new ArrayList<>(panels.size());
 		Iterator<String> it = titles.iterator();
@@ -91,7 +91,7 @@ public class ExpansionPanel extends JPanel {
 	 * @param iconColor    标题左侧箭头颜色，为null时使用默认颜色
 	 * @param iconFill     为true时使用填充图标，为false使用常规图标
 	 */
-	public ExpansionPanel(List<Item> items, Color titleBeginBG, Color titleEndBG, Color iconColor, boolean iconFill) {
+	public AccordionPanel(List<Item> items, Color titleBeginBG, Color titleEndBG, Color iconColor, boolean iconFill) {
 		this.items = items;
 		this.titleBeginBG = titleBeginBG;
 		this.titleEndBG = titleEndBG;
@@ -105,7 +105,7 @@ public class ExpansionPanel extends JPanel {
 
 		Iterator<Item> it = items.iterator();
 		for (Item p : items) {
-			ExpansionContentPanel c = new ExpansionContentPanel(p.title, p.panel, titleBeginBG, titleEndBG,
+			AccordionContentPanel c = new AccordionContentPanel(p.title, p.panel, titleBeginBG, titleEndBG,
 					iconColor, iconFill);
 			it.next().titlePanel = c.getLabel();
 			add(c);

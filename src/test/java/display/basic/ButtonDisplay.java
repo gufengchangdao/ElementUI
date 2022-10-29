@@ -9,14 +9,14 @@ import com.component.svg.icon.fill.SwordSvg;
 import com.component.svg.icon.regular.CrosshairSvg;
 import com.component.svg.icon.regular.QuestionSvg;
 import com.component.svg.icon.regular.XCircleSvg;
-import display.util.SwingDisplayUtil;
+import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;
 
 import java.awt.*;
 
 public class ButtonDisplay {
 	public static void main(String[] args) {
-		Container p = SwingDisplayUtil.init(new MigLayout("wrap 6", "", ""));
+		Container p = SwingTestUtil.init(new MigLayout("wrap 6", "", ""));
 		p.add(ButtonFactory.createDefaultButton("默认按钮", ColorUtil.PRIMARY_TEXT, Color.WHITE, ColorUtil.SECONDARY_TEXT));
 		p.add(ButtonFactory.createDefaultButton("主要按钮", ColorUtil.PRIMARY));
 		p.add(ButtonFactory.createDefaultButton("成功按钮", ColorUtil.SUCCESS));
@@ -50,6 +50,6 @@ public class ButtonDisplay {
 		p.add(ButtonFactory.createIconRoundButton(SwordSvg.of(32, 32), ColorUtil.PRIMARY, true));
 		p.add(ButtonFactory.createIconRoundButton(SwordSvg.of(32, 32), ColorUtil.PRIMARY, false));
 
-		SwingDisplayUtil.test();
+		SwingTestUtil.test();
 	}
 }

@@ -5,7 +5,7 @@ import com.component.navigation.steps.StepInfo;
 import com.component.navigation.steps.StepsComponent;
 import com.component.other.timeline.TimelineTest;
 import com.component.svg.icon.regular.SwordSvg;
-import display.util.SwingDisplayUtil;
+import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
@@ -16,7 +16,7 @@ import java.util.List;
 
 public class TimelineDisplay {
 	public static void main(String[] args) {
-		Container p = SwingDisplayUtil.init(new MigLayout("", "center, grow"));
+		Container p = SwingTestUtil.init(new MigLayout("", "center, grow"));
 
 		ArrayList<String> text = new ArrayList<>();
 		text.add("创建成功");
@@ -49,6 +49,6 @@ public class TimelineDisplay {
 		p.add(b1, "split 2");
 		p.add(b2);
 
-		SwingDisplayUtil.test();
+		SwingTestUtil.test();
 	}
 }

@@ -29,7 +29,9 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package lab;
+package lab.component.frame;
+
+import com.component.util.SwingTestUtil;
 
 import javax.swing.*;
 import java.awt.*;
@@ -38,19 +40,15 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 
 /**
- * 窗口包含窗口
- * InternalFrameDemo.java requires:
- * MyInternalFrame.java
+ * 嵌套窗口
  */
-public class InternalFrameDemo extends JFrame
-		implements ActionListener {
+public class InternalFrameDemo extends JFrame implements ActionListener {
 	JDesktopPane desktop;
 
 	public InternalFrameDemo() {
 		super("InternalFrameDemo");
 
-		//Make the big window be indented 50 pixels from each edge
-		//of the screen.
+		// 使大窗口居中且于屏幕边距为50
 		int inset = 50;
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 		setBounds(inset, inset,
@@ -101,7 +99,7 @@ public class InternalFrameDemo extends JFrame
 		if ("new".equals(e.getActionCommand())) { //new
 			createFrame();
 		} else { //quit
-			quit();
+			System.exit(0);
 		}
 	}
 
@@ -116,35 +114,36 @@ public class InternalFrameDemo extends JFrame
 		}
 	}
 
-	//Quit the application.
-	protected void quit() {
-		System.exit(0);
-	}
-
-	/**
-	 * Create the GUI and show it.  For thread safety,
-	 * this method should be invoked from the
-	 * event-dispatching thread.
-	 */
-	private static void createAndShowGUI() {
-		//Make sure we have nice window decorations.
-		JFrame.setDefaultLookAndFeelDecorated(true);
-
-		//Create and set up the window.
-		InternalFrameDemo frame = new InternalFrameDemo();
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-		//Display the window.
-		frame.setVisible(true);
-	}
-
 	public static void main(String[] args) {
-		//Schedule a job for the event-dispatching thread:
-		//creating and showing this application's GUI.
-		SwingUtilities.invokeLater(new Runnable() {
-			public void run() {
-				createAndShowGUI();
-			}
+		SwingUtilities.invokeLater(() -> {
+			SwingTestUtil.loadSkin();
+			InternalFrameDemo frame = new InternalFrameDemo();
+			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			frame.setVisible(true);
 		});
+	}
+}
+
+/**
+ * 内部窗口
+ */
+class MyInternalFrame extends JInternalFrame {
+	static int openFrameCount = 0;
+	static final int xOffset = 30, yOffset = 30;
+
+	public MyInternalFrame() {
+		super("窗口 #" + (++openFrameCount),
+				true,
+				true,
+				true,
+				true);
+
+		//...Create the GUI and put it in the window...
+
+		//...Then set the window size or call pack...
+		setSize(300, 300);
+
+		//Set the window's location.
+		setLocation(xOffset * openFrameCount, yOffset * openFrameCount);
 	}
 }

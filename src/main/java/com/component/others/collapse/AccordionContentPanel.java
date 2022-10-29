@@ -13,7 +13,10 @@ import java.awt.event.MouseListener;
 
 import static java.lang.Math.max;
 
-public class ExpansionContentPanel extends JPanel implements MouseListener {
+/**
+ * 手风琴子面板
+ */
+public class AccordionContentPanel extends JPanel implements MouseListener {
 	/** 标题 */
 	private final String title;
 	/** 标题的label */
@@ -38,11 +41,11 @@ public class ExpansionContentPanel extends JPanel implements MouseListener {
 		fIcon2.setColorFilter(filter);
 	}
 
-	protected ExpansionContentPanel(String title, JPanel panel, Color titleBG) {
+	protected AccordionContentPanel(String title, JPanel panel, Color titleBG) {
 		this(title, panel, titleBG, titleBG, ICON_COLOR, true);
 	}
 
-	protected ExpansionContentPanel(String title, JPanel panel, Color titleBeginBG, Color titleEndBG) {
+	protected AccordionContentPanel(String title, JPanel panel, Color titleBeginBG, Color titleEndBG) {
 		this(title, panel, titleBeginBG, titleEndBG, ICON_COLOR, true);
 	}
 
@@ -54,7 +57,7 @@ public class ExpansionContentPanel extends JPanel implements MouseListener {
 	 * @param iconColor    图标颜色
 	 * @param iconFill     图标类型，是否为填充图标
 	 */
-	protected ExpansionContentPanel(String title, JPanel panel, Color titleBeginBG, Color titleEndBG,
+	protected AccordionContentPanel(String title, JPanel panel, Color titleBeginBG, Color titleEndBG,
 	                                Color iconColor, boolean iconFill) {
 		super(new BorderLayout());
 		this.title = title;

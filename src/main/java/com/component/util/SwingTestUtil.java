@@ -59,6 +59,20 @@ public class SwingTestUtil {
 		}
 	}
 
+	/**
+	 * 懒人写法：加载美化、设置默认时间源、设置布局
+	 *
+	 * @param layoutManager 内容窗格要应用的布局管理器
+	 * @return 内容窗格
+	 */
+	public static JPanel init(LayoutManager layoutManager) {
+		loadSkin();
+		setDefaultTimingSource();
+		setSize(700, 500);
+		LAYOUT_MANAGER = layoutManager;
+		return (JPanel) getFrame().getContentPane();
+	}
+
 	public static void test(Component component) {
 		test(Collections.singletonList(component), true);
 	}

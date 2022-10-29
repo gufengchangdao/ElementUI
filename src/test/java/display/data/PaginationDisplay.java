@@ -1,7 +1,7 @@
 package display.data;
 
 import com.component.data.pagination.IconPaginationList;
-import display.util.SwingDisplayUtil;
+import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;
 
 import java.awt.*;
@@ -9,7 +9,7 @@ import java.awt.*;
 public class PaginationDisplay {
 	public static void main(String[] args) {
 		EventQueue.invokeLater(() -> {
-			Container p = SwingDisplayUtil.init(new MigLayout("wrap 1"));
+			Container p = SwingTestUtil.init(new MigLayout("wrap 1"));
 
 			IconPaginationList list1 = new IconPaginationList(35);
 			// 绘制背景
@@ -26,7 +26,7 @@ public class PaginationDisplay {
 			list3.getList().getCellRenderer().setBackgroundPainted(true);
 			p.add(list3, "gapleft 30");
 
-			SwingDisplayUtil.test();
+			SwingTestUtil.test();
 		});
 	}
 }

@@ -39,7 +39,10 @@
  *   CyclingSpinnerListModel.java
  */
 
-package lab;
+package com.component.form.picket;
+
+import com.component.util.SwingTestUtil;
+import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
@@ -48,8 +51,10 @@ import java.awt.*;
 import java.util.Calendar;
 import java.util.Date;
 
-public class SpinnerDemo3 extends JPanel
-		implements ChangeListener {
+/**
+ * 日期选择器
+ */
+public class SpinnerTest extends JPanel implements ChangeListener {
 	protected Calendar calendar;
 	protected JSpinner dateSpinner;
 
@@ -58,49 +63,48 @@ public class SpinnerDemo3 extends JPanel
 	protected Color FALL_COLOR = new Color(255, 153, 0);
 	protected Color WINTER_COLOR = Color.CYAN;
 
-	public SpinnerDemo3(boolean cycleMonths) {
-		super(new SpringLayout());
+	public SpinnerTest(boolean cycleMonths) {
+		// super(new SpringLayout());
+		super(new MigLayout("wrap 2", "fill"));
 
 		String[] labels = {"Month: ", "Year: ", "Another Date: "};
-		int numPairs = labels.length;
 		calendar = Calendar.getInstance();
-		JFormattedTextField ftf = null;
+		JFormattedTextField ftf;
 
-		//Add the first label-spinner pair.
-		String[] monthStrings = getMonthStrings(); //get month names
-		SpinnerListModel monthModel = null;
-		if (cycleMonths) { //use custom model
+		// 添加月份选择器
+		// 获取月份名
+		String[] monthStrings = getMonthStrings();
+		SpinnerListModel monthModel;
+		if (cycleMonths) { //使用循环模型
 			monthModel = new CyclingSpinnerListModel(monthStrings);
-		} else { //use standard model
+		} else { //使用标准模型
 			monthModel = new SpinnerListModel(monthStrings);
 		}
-		JSpinner spinner = addLabeledSpinner(this,
-				labels[0],
-				monthModel);
-		//Tweak the spinner's formatted text field.
+		// 创建月份选择器
+		JSpinner spinner = addLabeledSpinner(this, labels[0], monthModel);
+		//获取选择器的输入框组件
 		ftf = getTextField(spinner);
 		if (ftf != null) {
-			ftf.setColumns(8); //specify more width than we need
+			ftf.setColumns(8);
 			ftf.setHorizontalAlignment(JTextField.RIGHT);
 		}
 
 
-		//Add second label-spinner pair.
+		//添加年选择器
 		int currentYear = calendar.get(Calendar.YEAR);
-		SpinnerModel yearModel = new SpinnerNumberModel(currentYear, //initial value
-				currentYear - 100, //min
-				currentYear + 100, //max
-				1);                //step
-		//If we're cycling, hook this model up to the month model.
+		SpinnerModel yearModel = new SpinnerNumberModel(currentYear,
+				currentYear - 100,
+				currentYear + 100,
+				1);
+		//如果月份模型是可循环的，将其与年份模型相关联
 		if (monthModel instanceof CyclingSpinnerListModel) {
 			((CyclingSpinnerListModel) monthModel).setLinkedModel(yearModel);
 		}
 		spinner = addLabeledSpinner(this, labels[1], yearModel);
-		//Make the year be formatted without a thousands separator.
+		//去除数字编辑器中的千分位分割符
 		spinner.setEditor(new JSpinner.NumberEditor(spinner, "#"));
 
-
-		//Add the third label-spinner pair.
+		//添加第三个选择器
 		Date initDate = calendar.getTime();
 		calendar.add(Calendar.YEAR, -100);
 		Date earliestDate = calendar.getTime();
@@ -111,25 +115,23 @@ public class SpinnerDemo3 extends JPanel
 				latestDate,
 				Calendar.YEAR);//ignored for user input
 		dateSpinner = spinner = addLabeledSpinner(this, labels[2], dateModel);
+		// 设置日期的格式
 		spinner.setEditor(new JSpinner.DateEditor(spinner, "MM/yyyy"));
-		//Tweak the spinner's formatted text field.
+		// 调整选择器的输入框格式
 		ftf = getTextField(spinner);
 		if (ftf != null) {
 			ftf.setHorizontalAlignment(JTextField.RIGHT);
 			ftf.setBorder(BorderFactory.createEmptyBorder(1, 1, 1, 3));
 		}
-		spinner.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
-		//XXX: No easy way to get to the buttons and change their border.
-		setSeasonalColor(dateModel.getDate()); //initialize color
-
-		//Listen for changes on the date spinner.
+		// 设置初始字体色
+		setSeasonalColor(dateModel.getDate());
+		//监听日期的改变，改变字体色
 		dateSpinner.addChangeListener(this);
 
-		//Lay out the panel.
-		SpringUtilities.makeCompactGrid(this,
-				numPairs, 2, //rows, cols
-				10, 10,        //initX, initY
-				6, 10);       //xPad, yPad
+		// SpringUtilities.makeCompactGrid(this,
+		// 		numPairs, 2,
+		// 		10, 10,
+		// 		6, 10);
 	}
 
 	/**
@@ -160,6 +162,9 @@ public class SpinnerDemo3 extends JPanel
 		}
 	}
 
+	/**
+	 * 根据传入时间设置输入框字体色
+	 */
 	protected void setSeasonalColor(Date date) {
 		calendar.setTime(date);
 		int month = calendar.get(Calendar.MONTH);
@@ -168,25 +173,25 @@ public class SpinnerDemo3 extends JPanel
 
 		//Set the color to match northern hemisphere seasonal conventions.
 		switch (month) {
-			case 2:  //March
-			case 3:  //April
-			case 4:  //May
+			case 2:
+			case 3:
+			case 4:
 				ftf.setForeground(SPRING_COLOR);
 				break;
 
-			case 5:  //June
-			case 6:  //July
-			case 7:  //August
+			case 5:
+			case 6:
+			case 7:
 				ftf.setForeground(SUMMER_COLOR);
 				break;
 
-			case 8:  //September
-			case 9:  //October
-			case 10: //November
+			case 8:
+			case 9:
+			case 10:
 				ftf.setForeground(FALL_COLOR);
 				break;
 
-			default: //December, January, February
+			default:
 				ftf.setForeground(WINTER_COLOR);
 		}
 	}
@@ -199,11 +204,9 @@ public class SpinnerDemo3 extends JPanel
 		String[] months = new java.text.DateFormatSymbols().getMonths();
 		int lastIndex = months.length - 1;
 
-		if (months[lastIndex] == null
-				|| months[lastIndex].length() <= 0) { //last item empty
+		if (months[lastIndex] == null || months[lastIndex].length() <= 0) { //last item empty
 			String[] monthStrings = new String[lastIndex];
-			System.arraycopy(months, 0,
-					monthStrings, 0, lastIndex);
+			System.arraycopy(months, 0, monthStrings, 0, lastIndex);
 			return monthStrings;
 		} else { //last item not empty
 			return months;
@@ -213,7 +216,7 @@ public class SpinnerDemo3 extends JPanel
 	static protected JSpinner addLabeledSpinner(Container c,
 	                                            String label,
 	                                            SpinnerModel model) {
-		JLabel l = new JLabel(label);
+		JLabel l = new JLabel(label, SwingConstants.RIGHT);
 		c.add(l);
 
 		JSpinner spinner = new JSpinner(model);
@@ -223,33 +226,11 @@ public class SpinnerDemo3 extends JPanel
 		return spinner;
 	}
 
-	/**
-	 * Create the GUI and show it.  For thread safety,
-	 * this method should be invoked from the
-	 * event dispatch thread.
-	 */
-	private static void createAndShowGUI() {
-		//Create and set up the window.
-		JFrame frame = new JFrame("SpinnerDemo3");
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-		//Add content to the window.
-		frame.add(new SpinnerDemo3(true));
-
-		//Display the window.
-		frame.pack();
-		frame.setVisible(true);
-	}
-
 	public static void main(String[] args) {
-		//Schedule a job for the event dispatch thread:
-		//creating and showing this application's GUI.
-		SwingUtilities.invokeLater(new Runnable() {
-			public void run() {
-				//Turn off metal's use of bold fonts
-				UIManager.put("swing.boldMetal", Boolean.FALSE);
-				createAndShowGUI();
-			}
+		SwingUtilities.invokeLater(() -> {
+			SwingTestUtil.init(new FlowLayout()).add(new SpinnerTest(true));
+			UIManager.put("swing.boldMetal", Boolean.FALSE);
+			SwingTestUtil.test();
 		});
 	}
 }

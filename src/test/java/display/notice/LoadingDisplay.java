@@ -5,7 +5,7 @@ import com.component.notice.loading.LoadingLabel;
 import com.component.notice.loading.LoadingLabel2;
 import com.component.notice.loading.LoadingPanel;
 import com.component.svg.icon.regular.CrosshairSvg;
-import display.util.SwingDisplayUtil;
+import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
@@ -15,7 +15,7 @@ import java.awt.event.MouseEvent;
 
 public class LoadingDisplay {
 	public static void main(String[] args) {
-		Container p = SwingDisplayUtil.init(new MigLayout("wrap 1", "grow, center"));
+		Container p = SwingTestUtil.init(new MigLayout("wrap 1", "grow, center"));
 
 		p.add(new LoadingLabel(CrosshairSvg.of(48, 48), 700));
 
@@ -24,7 +24,7 @@ public class LoadingDisplay {
 		LoadingPanel<LoadingLabel2> panel = new LoadingPanel<>(
 				new LoadingLabel2(ColorUtil.PRIMARY, 3));
 		panel.setBorder(BorderFactory.createLineBorder(Color.RED));
-		JFrame frame = SwingDisplayUtil.getFrame();
+		JFrame frame = SwingTestUtil.getFrame();
 		frame.setGlassPane(panel);
 
 		JButton b = new JButton("开启加载");
@@ -41,6 +41,6 @@ public class LoadingDisplay {
 			}
 		});
 
-		SwingDisplayUtil.test();
+		SwingTestUtil.test();
 	}
 }

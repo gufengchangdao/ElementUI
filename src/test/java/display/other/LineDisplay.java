@@ -3,7 +3,7 @@ package display.other;
 import com.component.basic.color.ColorUtil;
 import com.component.others.line.Divider;
 import com.component.others.line.LineLabel;
-import display.util.SwingDisplayUtil;
+import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;
 import org.jdesktop.swingx.JXLabel;
 
@@ -12,7 +12,7 @@ import java.awt.*;
 
 public class LineDisplay {
 	public static void main(String[] args) {
-		Container p = SwingDisplayUtil.init(new MigLayout("", "grow, center"));
+		Container p = SwingTestUtil.init(new MigLayout("", "grow, center"));
 
 		Divider c1 = new Divider(new JLabel("少年包青天", SwingConstants.LEFT), 0.25f, false, 300);
 
@@ -33,6 +33,6 @@ public class LineDisplay {
 		lineLabel.setPreferredSize(new Dimension(200, 200));
 		p.add(lineLabel);
 
-		SwingDisplayUtil.test();
+		SwingTestUtil.test();
 	}
 }

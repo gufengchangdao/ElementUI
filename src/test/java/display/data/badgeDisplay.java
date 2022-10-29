@@ -4,7 +4,6 @@ import com.component.basic.color.ColorUtil;
 import com.component.data.badge.BadgePanelGroup;
 import com.component.data.label.BadgeLabel;
 import com.component.util.SwingTestUtil;
-import display.util.SwingDisplayUtil;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
@@ -14,7 +13,7 @@ import java.util.Arrays;
 public class badgeDisplay {
 	public static void main(String[] args) {
 		EventQueue.invokeLater(() -> {
-			SwingDisplayUtil.init(new MigLayout("wrap 1", "grow, center"));
+			SwingTestUtil.init(new MigLayout("wrap 1", "grow, center"));
 
 			JPanel panel = new JPanel(new MigLayout("wrap 1"));
 			JButton b1 = new JButton("添加");

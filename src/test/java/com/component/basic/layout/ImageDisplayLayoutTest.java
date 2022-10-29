@@ -14,10 +14,10 @@ public class ImageDisplayLayoutTest {
 
 		EventQueue.invokeLater(() -> {
 			try {
-				BufferedImage image1 = ImageIO.read(ImageDisplayLayoutTest.class.getResourceAsStream("/1.jpg"));
-				BufferedImage image2 = ImageIO.read(ImageDisplayLayoutTest.class.getResourceAsStream("/2.jpg"));
-				BufferedImage image3 = ImageIO.read(ImageDisplayLayoutTest.class.getResourceAsStream("/3.jpg"));
-				BufferedImage image4 = ImageIO.read(ImageDisplayLayoutTest.class.getResourceAsStream("/4.jpg"));
+				BufferedImage image1 = ImageIO.read(ImageDisplayLayoutTest.class.getResourceAsStream("1.jpg"));
+				BufferedImage image2 = ImageIO.read(ImageDisplayLayoutTest.class.getResourceAsStream("2.jpg"));
+				BufferedImage image3 = ImageIO.read(ImageDisplayLayoutTest.class.getResourceAsStream("3.jpg"));
+				BufferedImage image4 = ImageIO.read(ImageDisplayLayoutTest.class.getResourceAsStream("4.jpg"));
 
 				image1 = GraphicsUtilities.createThumbnailFast(image1, 800, 400);
 				image2 = GraphicsUtilities.createThumbnailFast(image2, 400, 400);

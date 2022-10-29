@@ -3,7 +3,7 @@ package display.other;
 import com.component.basic.color.ColorUtil;
 import com.component.common.SwingPosition;
 import com.component.others.tooltip.TooltipLabel;
-import display.util.SwingDisplayUtil;
+import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
@@ -11,7 +11,7 @@ import java.awt.*;
 
 public class TooltipLabelDisplay {
 	public static void main(String[] args) {
-		Container p = SwingDisplayUtil.init(new MigLayout("", "grow,center"));
+		Container p = SwingTestUtil.init(new MigLayout("", "grow,center"));
 		JButton b = new JButton("按钮");
 		TooltipLabel tooltipLabel = new TooltipLabel(b, "这是提示文本", SwingPosition.TOP_LEFT, ColorUtil.SUCCESS);
 
@@ -20,6 +20,6 @@ public class TooltipLabelDisplay {
 		});
 		p.add(b);
 
-		SwingDisplayUtil.test();
+		SwingTestUtil.test();
 	}
 }

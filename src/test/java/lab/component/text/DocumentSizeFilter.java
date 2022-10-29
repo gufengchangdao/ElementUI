@@ -29,57 +29,56 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package lab;
+package lab.component.text;
 
-import javax.swing.*;
+/* A 1.4 class used by TextComponentDemo.java. */
 
-/**
- * This 1.4 example is used by the various SpinnerDemos.
- * It implements a SpinnerListModel that works only with
- * an Object array and that implements cycling (the next
- * value and previous value are never null).  It also
- * lets you optionally associate a spinner model that's
- * linked to this one, so that when a cycle occurs the
- * linked spinner model is updated.
- * <p>
- * The SpinnerDemos use the CyclingSpinnerListModel for
- * a month spinner that (in SpinnerDemo3) is tied to the
- * year spinner, so that -- for example -- when the month
- * changes from December to January, the year increases.
- */
-public class CyclingSpinnerListModel extends SpinnerListModel {
-	Object firstValue, lastValue;
-	SpinnerModel linkedModel = null;
+import javax.swing.text.AttributeSet;
+import javax.swing.text.BadLocationException;
+import javax.swing.text.DocumentFilter;
+import java.awt.*;
 
-	public CyclingSpinnerListModel(Object[] values) {
-		super(values);
-		firstValue = values[0];
-		lastValue = values[values.length - 1];
+public class DocumentSizeFilter extends DocumentFilter {
+	int maxCharacters;
+	boolean DEBUG = false;
+
+	public DocumentSizeFilter(int maxChars) {
+		maxCharacters = maxChars;
 	}
 
-	public void setLinkedModel(SpinnerModel linkedModel) {
-		this.linkedModel = linkedModel;
-	}
-
-	public Object getNextValue() {
-		Object value = super.getNextValue();
-		if (value == null) {
-			value = firstValue;
-			if (linkedModel != null) {
-				linkedModel.setValue(linkedModel.getNextValue());
-			}
+	public void insertString(FilterBypass fb, int offs,
+	                         String str, AttributeSet a)
+			throws BadLocationException {
+		if (DEBUG) {
+			System.out.println("in DocumentSizeFilter's insertString method");
 		}
-		return value;
+
+		//This rejects the entire insertion if it would make
+		//the contents too long. Another option would be
+		//to truncate the inserted string so the contents
+		//would be exactly maxCharacters in length.
+		if ((fb.getDocument().getLength() + str.length()) <= maxCharacters)
+			super.insertString(fb, offs, str, a);
+		else
+			Toolkit.getDefaultToolkit().beep();
 	}
 
-	public Object getPreviousValue() {
-		Object value = super.getPreviousValue();
-		if (value == null) {
-			value = lastValue;
-			if (linkedModel != null) {
-				linkedModel.setValue(linkedModel.getPreviousValue());
-			}
+	public void replace(FilterBypass fb, int offs,
+	                    int length,
+	                    String str, AttributeSet a)
+			throws BadLocationException {
+		if (DEBUG) {
+			System.out.println("in DocumentSizeFilter's replace method");
 		}
-		return value;
+		//This rejects the entire replacement if it would make
+		//the contents too long. Another option would be
+		//to truncate the replacement string so the contents
+		//would be exactly maxCharacters in length.
+		if ((fb.getDocument().getLength() + str.length()
+				- length) <= maxCharacters)
+			super.replace(fb, offs, length, str, a);
+		else
+			Toolkit.getDefaultToolkit().beep();
 	}
+
 }

@@ -1,6 +1,8 @@
-package lab;// -*- mode:java; encoding:utf-8 -*-
+package lab.component.tree;// -*- mode:java; encoding:utf-8 -*-
 // vim:set fileencoding=utf-8:
 // @homepage@
+
+import com.component.util.SwingTestUtil;
 
 import javax.swing.*;
 import javax.swing.event.AncestorEvent;
@@ -24,27 +26,16 @@ public final class AddNode extends JPanel {
 	}
 
 	public static void main(String[] args) {
-		EventQueue.invokeLater(AddNode::createAndShowGui);
-	}
-
-	private static void createAndShowGui() {
-		try {
-			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException |
-		         UnsupportedLookAndFeelException ex) {
-			ex.printStackTrace();
-			Toolkit.getDefaultToolkit().beep();
-		}
-		JFrame frame = new JFrame("@title@");
-		frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-		frame.getContentPane().add(new AddNode());
-		frame.pack();
-		frame.setLocationRelativeTo(null);
-		frame.setVisible(true);
+		EventQueue.invokeLater(() -> {
+			Container p = SwingTestUtil.init(new FlowLayout());
+			p.add(new AddNode());
+			SwingTestUtil.test();
+		});
 	}
 }
 
 class TreePopupMenu extends JPopupMenu {
+	/** 操作的节点 */
 	private TreePath path;
 
 	protected TreePopupMenu() {
@@ -52,8 +43,10 @@ class TreePopupMenu extends JPopupMenu {
 		JTextField textField = new JTextField(24) {
 			private transient AncestorListener listener;
 
+			// 重写 updateUI，使得输入框更新时获取焦点
 			@Override
 			public void updateUI() {
+				// 每次调用父类方法后重新添加
 				removeAncestorListener(listener);
 				super.updateUI();
 				listener = new FocusAncestorListener();
@@ -62,12 +55,12 @@ class TreePopupMenu extends JPopupMenu {
 		};
 
 		add("add").addActionListener(e -> {
-			// https://ateraimemo.com/Swing/ScrollRectToVisible.html
 			JTree tree = (JTree) getInvoker();
 			DefaultTreeModel model = (DefaultTreeModel) tree.getModel();
 			DefaultMutableTreeNode parent = (DefaultMutableTreeNode) path.getLastPathComponent();
 			DefaultMutableTreeNode child = new DefaultMutableTreeNode("New node");
 			model.insertNodeInto(child, parent, parent.getChildCount());
+			// 展开新添加节点所在父节点
 			tree.scrollPathToVisible(new TreePath(child.getPath()));
 		});
 		add("add & reload").addActionListener(e -> {
@@ -85,14 +78,14 @@ class TreePopupMenu extends JPopupMenu {
 				return;
 			}
 			DefaultMutableTreeNode leaf = (DefaultMutableTreeNode) node;
-			textField.setText(leaf.getUserObject().toString());
+			textField.setText(leaf.getUserObject().toString()); //获取到节点的值设置给输入框
 			JTree tree = (JTree) getInvoker();
+			// 弹窗编辑的对话框
 			int ret = JOptionPane.showConfirmDialog(
 					tree, textField, "edit", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
 			if (ret == JOptionPane.OK_OPTION) {
 				tree.getModel().valueForPathChanged(path, textField.getText());
-				// leaf.setUserObject(str);
-				// model.nodeChanged(leaf);
+				// leaf.setUserObject(textField.getText());
 			}
 		});
 		addSeparator();
@@ -110,11 +103,10 @@ class TreePopupMenu extends JPopupMenu {
 	public void show(Component c, int x, int y) {
 		if (c instanceof JTree) {
 			JTree tree = (JTree) c;
-			// TreePath[] tsp = tree.getSelectionPaths();
 			path = tree.getPathForLocation(x, y);
 			// if (Objects.nonNull(path) && Arrays.asList(tsp).contains(path)) {
 			Optional.ofNullable(path).ifPresent(treePath -> {
-				tree.setSelectionPath(treePath);
+				tree.setSelectionPath(treePath); //设置选中该节点
 				super.show(c, x, y);
 			});
 		}
@@ -129,11 +121,9 @@ class FocusAncestorListener implements AncestorListener {
 
 	@Override
 	public void ancestorMoved(AncestorEvent e) {
-		/* not needed */
 	}
 
 	@Override
 	public void ancestorRemoved(AncestorEvent e) {
-		/* not needed */
 	}
 }
