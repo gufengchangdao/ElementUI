@@ -1,6 +1,5 @@
-package com.component.other.line;
+package com.component.others.line;
 
-import com.component.others.line.Arrow;
 import com.component.util.SwingTestUtil;
 
 import javax.swing.*;

@@ -1,7 +1,6 @@
-package com.component.other.carousel;
+package com.component.others.carousel;
 
 import com.component.basic.color.ColorUtil;
-import com.component.others.carousel.HorizontalCarouselPanel;
 import com.component.util.SwingTestUtil;
 
 import javax.swing.*;

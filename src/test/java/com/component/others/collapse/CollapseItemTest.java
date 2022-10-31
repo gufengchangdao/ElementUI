@@ -1,6 +1,5 @@
-package com.component.other.collapse;
+package com.component.others.collapse;
 
-import com.component.others.collapse.CollapseItem;
 import com.component.util.SwingTestUtil;
 
 import java.awt.*;

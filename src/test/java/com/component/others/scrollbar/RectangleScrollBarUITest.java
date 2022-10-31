@@ -1,6 +1,5 @@
-package com.component.other.scrollbar;
+package com.component.others.scrollbar;
 
-import com.component.others.scrollbar.RectangleScrollBarUI;
 import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;
 

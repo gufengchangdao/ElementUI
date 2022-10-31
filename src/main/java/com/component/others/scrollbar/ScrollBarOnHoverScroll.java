@@ -5,13 +5,10 @@ import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
 import javax.swing.plaf.LayerUI;
-import javax.swing.plaf.basic.BasicScrollBarUI;
 import java.awt.*;
-import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
-import java.util.Objects;
 import java.util.stream.IntStream;
 
 public class ScrollBarOnHoverScroll extends JPanel {
@@ -35,24 +32,6 @@ public class ScrollBarOnHoverScroll extends JPanel {
 	public static JLayer<JPanel> getLayer(Component c) {
 		ScrollBarOnHoverScroll p = new ScrollBarOnHoverScroll(c);
 		return new JLayer<>(p, p.new TimerScrollBarLayerUI());
-	}
-
-	public static void main(String[] args) {
-		EventQueue.invokeLater(() -> {
-			JPanel p = SwingTestUtil.init(new MigLayout());
-
-			p.add(getLayer(makeList()));
-
-			SwingTestUtil.test();
-		});
-	}
-
-	private static Component makeList() {
-		DefaultListModel<String> m = new DefaultListModel<>();
-		IntStream.range(0, 50)
-				.mapToObj(i -> String.format("%05d: %s", i, LocalDateTime.now(ZoneId.systemDefault())))
-				.forEach(m::addElement);
-		return new JList<>(m);
 	}
 
 	private class ScrollBarLayout extends BorderLayout {

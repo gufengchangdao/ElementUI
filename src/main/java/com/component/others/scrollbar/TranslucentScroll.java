@@ -8,14 +8,19 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.util.Objects;
 
+/**
+ * 半透明且不含轨道的滚动条，鼠标悬停时滑块变宽，移开变窄
+ */
 public class TranslucentScroll extends JScrollPane {
-	public TranslucentScroll(Component c) {
+	private TranslucentScroll(Component c) {
 		super(c);
 	}
 
-	public static JLayer<JPanel> getLayer(Component c) {
-
-		return new JLayer<>(makeTranslucentScrollBar(makeList()), new ScrollBarOnHoverLayerUI());
+	/**
+	 * 为给定组件添加到滚动窗格并滚动条，返回添加后的组件
+	 */
+	public static JLayer<JScrollPane> getLayer(Component c) {
+		return new JLayer<>(new TranslucentScroll(c), new ScrollBarOnHoverLayerUI());
 	}
 
 	@Override
@@ -105,9 +110,12 @@ class ScrollBarOnHoverLayerUI extends LayerUI<JScrollPane> {
 class TranslucentScrollBarUI extends BasicScrollBarUI {
 	protected static final int MAX_WIDTH = 12;
 	protected static final int MIN_WIDTH = 6;
-	private static final Color DEFAULT_COLOR = new Color(100, 100, 100, 190);
-	private static final Color DRAGGING_COLOR = new Color(100, 100, 100, 220);
-	private static final Color ROLLOVER_COLOR = new Color(100, 100, 100, 220);
+	// private static final Color DEFAULT_COLOR = new Color(100, 100, 100, 190);
+	private static final Color DEFAULT_COLOR = UIManager.getColor("ScrollBar.background");
+	// private static final Color DRAGGING_COLOR = new Color(100, 100, 100, 220);
+	private static final Color DRAGGING_COLOR = UIManager.getColor("ScrollBar.pressedThumbColor");
+	// private static final Color ROLLOVER_COLOR = new Color(100, 100, 100, 220);
+	private static final Color ROLLOVER_COLOR = UIManager.getColor("ScrollBar.hoverThumbColor");
 
 	@Override
 	protected JButton createDecreaseButton(int orientation) {
@@ -121,6 +129,7 @@ class TranslucentScrollBarUI extends BasicScrollBarUI {
 
 	@Override
 	protected void paintTrack(Graphics g, JComponent c, Rectangle r) {
+		// 这里不绘制滑轨
 		// Graphics2D g2 = (Graphics2D) g.create();
 		// g2.setPaint(new Color(100, 100, 100, 100));
 		// g2.fillRect(r.x, r.y, r.width - 1, r.height - 1);

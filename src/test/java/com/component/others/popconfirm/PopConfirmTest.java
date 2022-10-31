@@ -1,8 +1,7 @@
-package com.component.other.popconfirm;
+package com.component.others.popconfirm;
 
 import com.component.basic.button.ButtonFactory;
 import com.component.basic.color.ColorUtil;
-import com.component.others.popconfirm.PopConfirm;
 import com.component.radiance.common.api.icon.RadianceIcon;
 import com.component.svg.icon.fill.QuestionSvg;
 import com.component.util.SwingTestUtil;

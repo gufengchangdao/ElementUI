@@ -1,4 +1,4 @@
-package com.component.other.timeline;
+package com.component.others.timeline;
 
 import com.component.basic.color.ColorUtil;
 import com.component.navigation.steps.StepInfo;

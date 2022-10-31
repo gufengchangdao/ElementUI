@@ -1,7 +1,5 @@
-package com.component.other.collapse;
+package com.component.others.collapse;
 
-import com.component.others.collapse.AccordionContentPanel;
-import com.component.others.collapse.AccordionPanel;
 import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;
 

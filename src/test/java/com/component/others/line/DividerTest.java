@@ -1,6 +1,5 @@
-package com.component.other.line;
+package com.component.others.line;
 
-import com.component.others.line.Divider;
 import com.component.util.SwingTestUtil;
 import org.jdesktop.swingx.JXLabel;
 

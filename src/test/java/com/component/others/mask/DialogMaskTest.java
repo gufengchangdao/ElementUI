@@ -1,7 +1,6 @@
-package com.component.other.mask;
+package com.component.others.mask;
 
 import com.component.basic.color.ColorUtil;
-import com.component.others.mask.DialogMask;
 import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;
 

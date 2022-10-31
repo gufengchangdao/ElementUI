@@ -1,6 +1,5 @@
-package com.component.other.carousel;
+package com.component.others.carousel;
 
-import com.component.others.carousel.CarouselCardLayoutPanel;
 import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;
 

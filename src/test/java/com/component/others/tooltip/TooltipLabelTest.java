@@ -1,8 +1,7 @@
-package com.component.other.tooltip;
+package com.component.others.tooltip;
 
 import com.component.basic.color.ColorUtil;
 import com.component.common.SwingPosition;
-import com.component.others.tooltip.TooltipLabel;
 import com.component.util.SwingTestUtil;
 
 import javax.swing.*;

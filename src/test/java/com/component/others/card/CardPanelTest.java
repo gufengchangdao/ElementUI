@@ -1,6 +1,5 @@
-package com.component.other.card;
+package com.component.others.card;
 
-import com.component.others.card.CardPanel;
 import com.component.util.SwingTestUtil;
 
 import javax.swing.*;

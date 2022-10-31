@@ -1,4 +1,4 @@
-package com.component.other.collapse;
+package com.component.others.collapse;
 
 import com.component.util.SwingTestUtil;
 import org.jdesktop.swingx.JXTaskPane;

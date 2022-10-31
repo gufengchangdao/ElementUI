@@ -1,7 +1,6 @@
-package com.component.other.line;
+package com.component.others.line;
 
 import com.component.basic.color.ColorUtil;
-import com.component.others.line.LineLabel;
 import com.component.util.SwingTestUtil;
 
 import java.awt.*;

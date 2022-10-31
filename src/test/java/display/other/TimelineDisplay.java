@@ -3,7 +3,7 @@ package display.other;
 import com.component.basic.color.ColorUtil;
 import com.component.navigation.steps.StepInfo;
 import com.component.navigation.steps.StepsComponent;
-import com.component.other.timeline.TimelineTest;
+import com.component.others.timeline.TimelineTest;
 import com.component.svg.icon.regular.SwordSvg;
 import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;

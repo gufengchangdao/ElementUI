@@ -1,7 +1,6 @@
-package com.component.other.carousel;
+package com.component.others.carousel;
 
 import com.component.common.component.NoMouseListenerComponentFactory;
-import com.component.others.carousel.SlideshowPanel;
 import com.component.util.SwingTestUtil;
 
 import java.awt.*;
