@@ -1,4 +1,4 @@
-package lab.component.basic.link;
+package lab.component.link;
 // vim:set fileencoding=utf-8:
 // @homepage@
 

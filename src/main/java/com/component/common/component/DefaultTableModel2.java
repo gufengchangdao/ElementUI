@@ -7,11 +7,14 @@ import java.util.Vector;
  * 基础表格模型
  *
  * <ul>
- *     <li>可识别icon</li>
+ *     <li>可识别icon、boolean</li>
  *     <li>默认不可编辑</li>
  * </ul>
  */
 public class DefaultTableModel2 extends DefaultTableModel {
+	/** 所有单元格是否可以编辑 */
+	private boolean cellEditable = false;
+
 	public DefaultTableModel2() {
 	}
 
@@ -42,6 +45,14 @@ public class DefaultTableModel2 extends DefaultTableModel {
 
 	@Override
 	public boolean isCellEditable(int row, int column) {
-		return false;
+		return cellEditable;
+	}
+
+	public boolean isCellEditable() {
+		return cellEditable;
+	}
+
+	public void setCellEditable(boolean cellEditable) {
+		this.cellEditable = cellEditable;
 	}
 }

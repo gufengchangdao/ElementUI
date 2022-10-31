@@ -76,9 +76,7 @@ public class XCircleSvg extends AbstractRadianceIcon {
 
 	protected void innerPaint(Graphics2D g) {
 		float origAlpha = getOrigAlpha(g);
-
 		_paint0(g, origAlpha);
-
 
 		super.innerPaint(g);
 	}

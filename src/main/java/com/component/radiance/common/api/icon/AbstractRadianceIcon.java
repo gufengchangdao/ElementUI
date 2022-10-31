@@ -46,7 +46,7 @@ public abstract class AbstractRadianceIcon implements RadianceIcon {
 	}
 
 	protected void innerPaint(Graphics2D g) {
-		shape = null;
+		// shape = null;
 		generalPath = null;
 		paint = null;
 		stroke = null;
@@ -175,5 +175,9 @@ public abstract class AbstractRadianceIcon implements RadianceIcon {
 	 */
 	public static double getOrigHeight() {
 		return 0;
+	}
+
+	public Shape getShape() {
+		return shape;
 	}
 }

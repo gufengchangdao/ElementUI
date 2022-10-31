@@ -72,4 +72,9 @@ public class RadianceIconUIResource implements RadianceIcon, UIResource {
 	public ColorFilter getColorFilter() {
 		return null;
 	}
+
+	@Override
+	public Shape getShape() {
+		return delegate.getShape();
+	}
 }

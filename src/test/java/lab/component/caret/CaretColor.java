@@ -1,0 +1,103 @@
+package lab.component.caret;
+
+import com.component.util.SwingTestUtil;
+import net.miginfocom.swing.MigLayout;
+
+import javax.swing.*;
+import javax.swing.text.html.HTMLEditorKit;
+import javax.swing.text.html.StyleSheet;
+import java.awt.*;
+import java.awt.event.ItemEvent;
+import java.util.stream.Stream;
+
+/**
+ * 修改插入符颜色
+ */
+public class CaretColor extends JPanel {
+
+	private CaretColor() {
+		super(new BorderLayout(5, 5));
+
+		// JEditorPane插入符颜色
+		// UIManager.put("TextPane.caretForeground", Color.ORANGE);
+		StyleSheet styleSheet = new StyleSheet();
+		styleSheet.addRule("body {font-size: 12pt}");
+		styleSheet.addRule(".highlight {color: red; background: green}");
+		HTMLEditorKit htmlEditorKit = new HTMLEditorKit();
+		htmlEditorKit.setStyleSheet(styleSheet);
+		JEditorPane editor = new JEditorPane();
+		// editor.setEditable(false);
+		editor.setEditorKit(htmlEditorKit);
+		editor.setText(makeTestHtml());
+		editor.setCaretColor(null);
+
+		// JTextField插入符颜色
+		JTextField field = new JTextField("JTextField");
+		field.setBackground(Color.GRAY);
+		field.setForeground(Color.WHITE);
+
+		JRadioButton r1 = new JRadioButton("RED");
+		r1.addItemListener(e -> {
+			if (e.getStateChange() == ItemEvent.SELECTED) {
+				field.setCaretColor(Color.RED);
+				// editor.setCaretColor(Color.RED);
+			}
+		});
+
+		JRadioButton r2 = new JRadioButton("null");
+		r2.addItemListener(e -> {
+			if (e.getStateChange() == ItemEvent.SELECTED) {
+				field.setCaretColor(null);
+				// editor.setCaretColor(null);
+			}
+		});
+
+		JRadioButton r3 = new JRadioButton("Lnf default", true);
+		r3.addItemListener(e -> {
+			if (e.getStateChange() == ItemEvent.SELECTED) {
+				Color c = UIManager.getLookAndFeelDefaults().getColor("TextField.caretForeground");
+				field.setCaretColor(c);
+			}
+		});
+
+		ButtonGroup bg = new ButtonGroup();
+		Box box = Box.createHorizontalBox();
+		Stream.of(r1, r2, r3).forEach(rb -> {
+			bg.add(rb);
+			box.add(rb);
+			box.add(Box.createHorizontalStrut(2));
+		});
+		box.add(field);
+
+		// JTextArea插入符颜色
+		UIManager.put("TextArea.caretForeground", Color.ORANGE);
+		JTextArea area = new JTextArea("TextArea.caretForeground: ORANGE");
+
+		JPanel p = new JPanel(new GridLayout(2, 1, 2, 2));
+		p.add(new JScrollPane(area));
+		p.add(new JScrollPane(editor));
+
+		setBorder(BorderFactory.createTitledBorder("JTextComponent#setCaretColor(...)"));
+		add(box, BorderLayout.NORTH);
+		add(p);
+		setPreferredSize(new Dimension(320, 240));
+	}
+
+	private static String makeTestHtml() {
+		return String.join("\n",
+				"<html><body>",
+				"<div>JTextPane#setCaretColor(null)</div>",
+				"<div class='highlight'>1111111111</div>",
+				"<div>2222222222</div>",
+				"</body></html>"
+		);
+	}
+
+	public static void main(String[] args) {
+		EventQueue.invokeLater(() -> {
+			JPanel p = SwingTestUtil.init(new MigLayout());
+			p.add(new CaretColor());
+			SwingTestUtil.test();
+		});
+	}
+}

@@ -9,84 +9,85 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee1abc60-5042-4165-bc9b-3cb5daffcf07" name="变更" comment="1.0">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/common/component/DefaultTableModel2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/cursor/AnimatedCursor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/data/table/renderer/AlignDecimalCellRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/listener/TimerHierarchyListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/util/RepaintUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/cursor/AnimatedCursorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/data/table/AlignDecimalCellRendererTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/util/ImageUtilTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/action/ActiveWindowSelectionHighlight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/basic/link/AnchorTextColor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/frame/AlwaysOnTop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/other/AnalogClock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/other/animatedtray/AnimatedTrayIcon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/popup/AdjustPopupLocation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/table/AddRemoveTableColumn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/table/AdjustRowHeightFillsViewport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/table/TableAddRow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/cursor/AnimatedCursor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/com/component/util/00.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/com/component/util/do_not_dispose.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/cursor/00.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/cursor/01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/cursor/02.png" afterDir="false" />
+    <list default="true" id="ee1abc60-5042-4165-bc9b-3cb5daffcf07" name="变更" comment="新增添加一些组件">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/basic/border/CentredBackgroundBorder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/basic/layout/CenterLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/basic/link/LinkText.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/common/component/BaseTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/data/table/renderer/TableHeaderPopupRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/data/table/renderer/TextAreaCellRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/form/input/StringAdviceInputField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/form/input/model/BigDecimalSpinnerModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/form/input/verifier/IntegerDocumentFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/form/input/verifier/IntegerInputVerifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/form/list/renderer/TooltipListCellRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/listener/AutoRepeatHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/notice/loading/LoadingLabel3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/others/carousel/CarouselCardLayoutPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/others/line/Arrow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/others/mask/DialogMask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/others/scrollbar/RectangleScrollBarUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/others/scrollbar/ScrollBarOnHoverScroll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/others/scrollbar/TranslucentScroll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/others/tooltip/BalloonToolTip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/others/votice/AuditoryCuesFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/util/BrowserLauncherUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/util/TextEditorUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/basic/border/CentredBackgroundBorderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/basic/link/LinkButtonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/data/table/render/TableHeaderPopupRendererTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/data/table/render/TextAreaCellRendererTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/form/input/BigDecimalSpinnerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/form/input/StringAdviceInputFieldTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/form/input/verifier/VerifierTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/form/list/renderer/TooltipListCellRendererTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/listener/AutoRepeatHandlerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/notice/loading/LoadingLabel3Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/other/carousel/CarouselCardLayoutPanelTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/other/line/ArrowTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/other/mask/DialogMaskTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/other/scrollbar/RectangleScrollBarUITest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/votice/AuditoryCuesFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/display/navigation/breadcrumb/BreadcrumbList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/caret/CaretColor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/caret/CaretSelectionHighlight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/combobox/ButtonInComboEditor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/combopopup/BasicComboPopupTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/listener/AutoScroll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/menu/ButtonsInMenuItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lab/date/CalendarViewList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lab/date/CalendarViewTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lab/list/ButtonsInListCell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lab/other/verifier/CellEditorInputVerifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/com/component/votice/notice2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/img/beauty.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/component/combobox/16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/component/combobox/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/component/combobox/feed-icon-14x14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/component/listener/CRW_3857_JFR.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/component/other/animatedtray/16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/component/other/animatedtray/16x16l.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/component/other/animatedtray/16x16r.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/others/collapse/ExpansionContentPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/others/collapse/AccordionContentPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/others/collapse/ExpansionPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/others/collapse/AccordionPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/svg/app/BatchProcessFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/svg/app/BatchProcessFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/util/ImageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/util/ImageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/basic/button/IconButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/basic/button/IconButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/basic/link/LinkButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/basic/link/LinkButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/common/component/BaseList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/common/component/DefaultTableModel2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/common/component/DefaultTableModel2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/data/table/ETable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/data/table/ETable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/navigation/navmenu/NavList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/navigation/navmenu/NavList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/radiance/common/api/icon/AbstractRadianceIcon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/radiance/common/api/icon/AbstractRadianceIcon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/radiance/common/api/icon/ImageBackedFilterableRadianceIcon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/radiance/common/api/icon/ImageBackedFilterableRadianceIcon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/radiance/common/api/icon/RadianceIcon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/radiance/common/api/icon/RadianceIcon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/radiance/common/api/icon/RadianceIconUIResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/radiance/common/api/icon/RadianceIconUIResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/svg/icon/regular/XCircleSvg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/svg/icon/regular/XCircleSvg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/component/util/SwingTestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/util/SwingTestUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/basic/layout/ImageDisplayLayoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/basic/layout/ImageDisplayLayoutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/other/collapse/ExpansionPanelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/other/collapse/AccordionPanelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/basic/ButtonDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/basic/ButtonDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/basic/CheckboxDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/basic/CheckboxDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/basic/ColumnsLayoutDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/basic/ColumnsLayoutDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/common/component/BaseListTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/display/basic/LinkDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/basic/LinkDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/data/EmptyDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/data/EmptyDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/data/LabelDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/data/LabelDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/data/PaginationDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/data/PaginationDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/data/ProgressDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/data/ProgressDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/data/ResultDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/data/ResultDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/data/TagDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/data/TagDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/data/badgeDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/data/badgeDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/form/InputDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/form/InputDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/form/ListDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/form/ListDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/form/PicketDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/form/PicketDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/form/RateDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/form/RateDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/form/SelectDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/form/SelectDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/form/UploadDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/form/UploadDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/navigation/NavigationDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/navigation/NavigationDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/notice/AlertDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/notice/AlertDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/notice/LoadingDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/notice/LoadingDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/notice/MessageDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/notice/MessageDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/notice/NotificationDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/notice/NotificationDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/other/CardDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/other/CardDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/other/CarouselDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/other/CarouselDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/other/CollapseDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/other/CollapseDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/other/LineDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/other/LineDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/other/PopConfirmDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/other/PopConfirmDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/other/SvgDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/other/SvgDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/other/TimelineDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/other/TimelineDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/other/TooltipLabelDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/other/TooltipLabelDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/util/SwingDisplayUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/ActiveWindowSelectionHighlight.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/AddNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab/component/tree/AddNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/CyclingSpinnerListModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/form/picket/CyclingSpinnerListModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/DocumentSizeFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab/component/text/DocumentSizeFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/InternalFrameDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab/component/frame/InternalFrameDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/JSplitPaneTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/MyInternalFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/SpinnerDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/form/picket/SpinnerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/SpringUtilities.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/TextComponentDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab/component/text/TextComponentDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/component/basic/layout/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/component/basic/layout/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/component/basic/layout/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/component/basic/layout/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lab/component/basic/link/AnchorTextColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab/component/link/AnchorTextColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lab/component/other/animatedtray/AnimatedTrayIcon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab/component/other/animatedtray/AnimatedTrayIcon.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,40 +116,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/MyRoom/ProjectCollection/JAVA/ElementUI/src/test/resources/com/component/util",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "工件",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.28275862",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/MyRoom/ProjectCollection/JAVA/ElementUI/src/test/resources/com/component/basic/border&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.28275862&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/新建临时文件": [
-      "Properties"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/新建临时文件&quot;: [
+      &quot;JAVA&quot;,
+      &quot;Properties&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\MyRoom\ProjectCollection\JAVA\ElementUI\src\test\resources\com\component\util" />
-      <recent name="D:\MyRoom\ProjectCollection\JAVA\ElementUI\src\test\resources" />
-      <recent name="D:\MyRoom\ProjectCollection\JAVA\ElementUI\src\test\resources\lab.cursor" />
-      <recent name="D:\MyRoom\ProjectCollection\JAVA\ElementUI\src\test\java\lab\cursor" />
-      <recent name="D:\MyRoom\ProjectCollection\JAVA\ElementUI\src\test\java\lab\component\other" />
+      <recent name="D:\MyRoom\ProjectCollection\JAVA\ElementUI\src\test\resources\com\component\basic\border" />
+      <recent name="D:\MyRoom\ProjectCollection\JAVA\ElementUI\src\test\resources\lab\component\combobox" />
+      <recent name="D:\MyRoom\ProjectCollection\JAVA\ElementUI\src\test\java\lab\component\combobox" />
+      <recent name="D:\MyRoom\ProjectCollection\JAVA\ElementUI\src\test\java\display\navigation\breadcrumb" />
+      <recent name="D:\MyRoom\ProjectCollection\JAVA\ElementUI\src\test\resources\lab\component\listener" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MyRoom\ProjectCollection\JAVA\ElementUI\src\test\resources\img" />
+      <recent name="D:\MyRoom\ProjectCollection\JAVA\ElementUI\src\test\resources\com\component\votice" />
       <recent name="D:\MyRoom\ProjectCollection\JAVA\ElementUI\src\test\resources\com\component\util" />
       <recent name="D:\MyRoom\ProjectCollection\JAVA\ElementUI\src\test\resources\lab\cursor" />
       <recent name="D:\MyRoom\ProjectCollection\JAVA\ElementUI\src\test\resources\com\component\basic\layout" />
-      <recent name="D:\MyRoom\ProjectCollection\JAVA\ElementUI\src\main\resources\font" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.component.form.input.verifier" />
       <recent name="com.component.basic.link" />
       <recent name="com.component.data" />
       <recent name="com.component.data.table" />
@@ -159,13 +163,13 @@
       <recent name="lab" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.BatchProcessFrame">
-    <configuration name="AnimatedCursor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lab.cursor.AnimatedCursor" />
+  <component name="RunManager" selected="应用程序.ScrollBarOnHoverScroll">
+    <configuration name="CellEditorInputVerifier" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lab.other.verifier.CellEditorInputVerifier" />
       <module name="ElementUI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lab.cursor.*" />
+          <option name="PATTERN" value="lab.other.verifier.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -173,38 +177,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AnimatedCursorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.component.cursor.AnimatedCursorTest" />
+    <configuration name="CentredBackgroundBorderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.component.basic.border.CentredBackgroundBorderTest" />
       <module name="ElementUI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.component.cursor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BatchProcessFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.component.svg.app.BatchProcessFrame" />
-      <module name="ElementUI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.component.svg.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ImageUtilTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.component.util.ImageUtilTest" />
-      <module name="ElementUI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.component.util.*" />
+          <option name="PATTERN" value="com.component.basic.border.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -219,13 +197,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ScrollBarOnHoverScroll" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.component.others.scrollbar.ScrollBarOnHoverScroll" />
+      <module name="ElementUI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.component.others.scrollbar.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VerifierTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.component.form.input.verifier.VerifierTest" />
+      <module name="ElementUI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.component.form.input.verifier.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.BatchProcessFrame" />
-        <item itemvalue="应用程序.ImageUtilTest" />
+        <item itemvalue="应用程序.ScrollBarOnHoverScroll" />
         <item itemvalue="应用程序.Main" />
-        <item itemvalue="应用程序.AnimatedCursorTest" />
-        <item itemvalue="应用程序.AnimatedCursor" />
+        <item itemvalue="应用程序.CentredBackgroundBorderTest" />
+        <item itemvalue="应用程序.VerifierTest" />
+        <item itemvalue="应用程序.CellEditorInputVerifier" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +252,9 @@
       <workItem from="1666878355775" duration="6178000" />
       <workItem from="1666931384825" duration="16772000" />
       <workItem from="1666957425614" duration="1887000" />
-      <workItem from="1667008301918" duration="13608000" />
+      <workItem from="1667008301918" duration="33743000" />
+      <workItem from="1667096500613" duration="29794000" />
+      <workItem from="1667177838056" duration="2469000" />
     </task>
     <task id="LOCAL-00001" summary="1.0">
       <created>1666786717808</created>
@@ -397,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666887766569</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="新增添加一些组件">
+      <created>1667033328330</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1667033328330</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,7 +429,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.0" />
+    <MESSAGE value="新增添加一些组件" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增添加一些组件" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

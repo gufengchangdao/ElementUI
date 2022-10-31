@@ -119,6 +119,9 @@ public class SwingTestUtil {
 	public static void setSize(int width, int height) {
 		WIDTH = width;
 		HEIGHT = height;
+		if (frame != null){
+			frame.getContentPane().setPreferredSize(new Dimension(WIDTH, HEIGHT));
+		}
 	}
 
 	public static JFrame getFrame() {

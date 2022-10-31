@@ -1,8 +1,8 @@
 package com.component.data.table;
 
+import com.component.common.component.BaseTable;
 import com.component.data.table.renderer.ETableCellRenderer;
 import com.component.data.table.renderer.TextFieldCellEditor;
-import org.jdesktop.swingx.JXTable;
 
 import javax.swing.*;
 import javax.swing.table.TableColumnModel;
@@ -18,7 +18,7 @@ import java.util.Vector;
  *     <li>渲染相关：斑马线、边框类型</li>
  * </ul>
  */
-public class ETable extends JXTable {
+public class ETable extends BaseTable {
 	private ETableCellRenderer cellRenderer = new ETableCellRenderer();
 	private TextFieldCellEditor cellEditor = new TextFieldCellEditor(new JTextField());
 

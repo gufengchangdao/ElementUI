@@ -2,6 +2,7 @@ package com.component.basic.link;
 
 import com.component.basic.color.ColorUtil;
 import com.component.radiance.common.api.icon.RadianceIcon;
+import com.component.util.BrowserLauncherUtil;
 
 import javax.swing.*;
 import java.awt.*;
@@ -17,6 +18,8 @@ public class LinkButton extends JButton implements MouseListener {
 	private boolean isEnter;
 	/** 是否绘制下划线 */
 	private boolean underlinePainted;
+	/** 点击后访问的url，默认为null，即不做任何事 */
+	private String url;
 	/** 字体色 */
 	private Color fg;
 	/** 鼠标悬停时字体色，默认为字体色的不透明度更低的颜色 */
@@ -26,29 +29,16 @@ public class LinkButton extends JButton implements MouseListener {
 	/** 鼠标悬停时图标色，与字体色保持一致 */
 	private RadianceIcon.ColorFilter colorFilter;
 
-	public LinkButton(String text, Color fg, Color hoverFGColor) {
-		this(text, fg, hoverFGColor, true);
+	public LinkButton(String text, Color fg) {
+		this(text, null, fg, null);
 	}
 
-	/**
-	 * @param text             文本
-	 * @param fg               字体色，可以为null
-	 * @param hoverFGColor     鼠标悬停时字体色，填null时为字体色的不透明度更低的颜色
-	 * @param underlinePainted 是否绘制下划线
-	 */
-	public LinkButton(String text, Color fg, Color hoverFGColor, boolean underlinePainted) {
-		super(text);
-		this.fg = fg;
-		setForeground(fg);
-		if (hoverFGColor == null)
-			hoverFGColor = ColorUtil.changeAlpha(fg == null ? UIManager.getColor("Button.foreground") : fg, .8f);
-		this.hoverFGColor = hoverFGColor;
-		this.underlinePainted = underlinePainted;
-		init();
+	public LinkButton(String text, Color fg, Color hoverFGColor) {
+		this(text,  null, fg, hoverFGColor);
 	}
 
 	public LinkButton(String text, RadianceIcon icon, Color fg, Color hoverFGColor) {
-		this(text, icon, fg, hoverFGColor, true);
+		this(text, null, icon, fg, hoverFGColor, true);
 	}
 
 	/**
@@ -58,8 +48,9 @@ public class LinkButton extends JButton implements MouseListener {
 	 * @param hoverFGColor     鼠标悬停时字体色，填null时为字体色的不透明度更低的颜色
 	 * @param underlinePainted 是否绘制下划线
 	 */
-	public LinkButton(String text, RadianceIcon icon, Color fg, Color hoverFGColor, boolean underlinePainted) {
+	public LinkButton(String text, String url, RadianceIcon icon, Color fg, Color hoverFGColor, boolean underlinePainted) {
 		super(text, icon);
+		this.url = url;
 		this.icon = icon;
 		this.fg = fg;
 		setForeground(fg);
@@ -76,6 +67,9 @@ public class LinkButton extends JButton implements MouseListener {
 		setFocusPainted(false);
 		setBackground(null);
 		setOpaque(false);
+		setContentAreaFilled(false);
+		setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+		setMargin(new Insets(0,0,0,0));
 		if (icon != null) {
 			colorFilter = color -> hoverFGColor;
 		}
@@ -92,7 +86,7 @@ public class LinkButton extends JButton implements MouseListener {
 
 	@Override
 	public void mouseClicked(MouseEvent e) {
-
+		if (url != null) BrowserLauncherUtil.openUrl(url);
 	}
 
 	@Override
@@ -155,5 +149,13 @@ public class LinkButton extends JButton implements MouseListener {
 
 	public void setColorFilter(RadianceIcon.ColorFilter colorFilter) {
 		this.colorFilter = colorFilter;
+	}
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
 	}
 }

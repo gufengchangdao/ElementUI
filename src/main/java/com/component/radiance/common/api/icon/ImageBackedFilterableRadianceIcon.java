@@ -152,6 +152,11 @@ public class ImageBackedFilterableRadianceIcon implements RadianceIcon, Asynchro
 		return colorFilter;
 	}
 
+	@Override
+	public Shape getShape() {
+		return currDelegate.getShape();
+	}
+
 	private void makeColorized() {
 		BufferedImage flat = RadianceCommonCortex.getBlankScaledImage(
 				RadianceCommonCortex.getScaleFactor(null),

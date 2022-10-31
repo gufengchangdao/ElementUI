@@ -1,7 +1,5 @@
 package com.component.navigation.navmenu;
 
-import com.component.common.component.BaseList;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
@@ -15,7 +13,7 @@ import java.util.Vector;
 /**
  * 多级导航列表，作为多级导航的弹窗列表
  */
-public class NavList<E> extends BaseList<E> implements MouseMotionListener, MouseListener {
+public class NavList<E> extends JList<E> implements MouseMotionListener, MouseListener {
 	/** 父节点 */
 	private NavList<E> last;
 	/** 子节点，键为索引，值为列表 */
@@ -141,10 +139,10 @@ public class NavList<E> extends BaseList<E> implements MouseMotionListener, Mous
 	public void mouseDragged(MouseEvent e) {
 
 	}
-
+	private int hoverIndex;
 	@Override
 	public void mouseMoved(MouseEvent e) {
-		int hoverIndex = getHoverIndex();
+		hoverIndex = locationToIndex(e.getPoint());
 		if (hoverIndex == -1) return; //刚出去会有短暂一刻为 -1
 
 		Map<Integer, NavList<E>> map = getNext();
@@ -330,5 +328,13 @@ public class NavList<E> extends BaseList<E> implements MouseMotionListener, Mous
 			builder.append(model.getElementAt(i)).append(", ");
 		}
 		return builder.toString();
+	}
+
+	public int getHoverIndex() {
+		return hoverIndex;
+	}
+
+	public void setHoverIndex(int hoverIndex) {
+		this.hoverIndex = hoverIndex;
 	}
 }

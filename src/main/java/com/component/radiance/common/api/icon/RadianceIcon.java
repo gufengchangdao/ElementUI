@@ -50,4 +50,17 @@ public interface RadianceIcon extends Icon {
 	interface ColorFilter {
 		Color filter(Color color);
 	}
+
+	/**
+	 * 让子类可以获取到图标的Shape对象，可以重写{@link javax.swing.JComponent#contains(int, int)}方法来设置图标触发事件的范围
+	 *
+	 * 例如：
+	 * <pre>
+	 *	public boolean contains(int x, int y) {
+	 * 	    Shape s = icon.getShape();
+	 *      return Objects.nonNull(s) && s.contains(x, y);
+	 *  }
+	 * </pre>
+	 */
+	Shape getShape();
 }

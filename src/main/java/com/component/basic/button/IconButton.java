@@ -76,6 +76,11 @@ public class IconButton extends BaseComponent implements MouseListener {
 	}
 
 	@Override
+	public boolean contains(int x, int y) {
+		return currentIcon.getShape().contains(x, y);
+	}
+
+	@Override
 	public Dimension getMinimumSize() {
 		return getPreferredSize();
 	}
