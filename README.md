@@ -213,6 +213,25 @@ EventQueue.invokeLater(()->{
 
 resources下有两种字体，项目中并未使用，开发者可以使用FontUtil加载字体。同时字体也可以替代SVG充当图标，也许在图文混合的场景下使用更方便。
 
+8. 后续添加组件(2022/11/2)
+
+![](https://i.niupic.com/images/2022/11/02/aabA.png)
+![](https://i.niupic.com/images/2022/11/02/aabD.png)
+![](https://i.niupic.com/images/2022/11/02/aabB.png)
+![](https://i.niupic.com/images/2022/11/02/aabF.png)
+![](https://i.niupic.com/images/2022/11/02/aabE.png)
+![](https://i.niupic.com/images/2022/11/02/aabC.png)
+![](https://i.niupic.com/images/2022/11/02/aabG.png)
+![](https://i.niupic.com/images/2022/11/02/aabI.png)
+![](https://i.niupic.com/images/2022/11/02/aabH.png)
+![](https://i.niupic.com/images/2022/11/02/aabJ.png)
+![](https://i.niupic.com/images/2022/11/02/aabL.png)
+![](https://i.niupic.com/images/2022/11/02/aabK.png)
+![](https://i.niupic.com/images/2022/11/02/aabM.png)
+![](https://i.niupic.com/images/2022/11/02/aabO.png)
+![](https://i.niupic.com/images/2022/11/02/aabN.png)
+
+
 ## 参考
 
 - 《Java动画、图形和极富客户端效果开发》

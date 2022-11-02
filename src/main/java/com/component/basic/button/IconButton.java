@@ -77,7 +77,8 @@ public class IconButton extends BaseComponent implements MouseListener {
 
 	@Override
 	public boolean contains(int x, int y) {
-		return currentIcon.getShape().contains(x, y);
+		// 可以重写该方法，获取到icon的shape来判断
+		return super.contains(x, y);
 	}
 
 	@Override

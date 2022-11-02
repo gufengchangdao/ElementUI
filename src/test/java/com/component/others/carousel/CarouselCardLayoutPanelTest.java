@@ -12,10 +12,10 @@ public class CarouselCardLayoutPanelTest {
 			JPanel p = SwingTestUtil.init(new MigLayout("wrap 2", "grow"));
 
 			CarouselCardLayoutPanel cards = new CarouselCardLayoutPanel();
-			cards.add(new JScrollPane(new JTree()), "JTree");
-			cards.add(new JSplitPane(), "JSplitPane");
-			cards.add(new JScrollPane(new JTable(9, 3)), "JTable");
-			cards.add(new JButton("JButton"), "JButton");
+			cards.add(new JScrollPane(new JTree()));
+			cards.add(new JSplitPane());
+			cards.add(new JScrollPane(new JTable(9, 3)));
+			cards.add(new JButton("JButton"));
 			p.add(cards, "span 2, center");
 
 			JButton b1 = new JButton("上一个");

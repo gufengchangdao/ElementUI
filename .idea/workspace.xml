@@ -9,271 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee1abc60-5042-4165-bc9b-3cb5daffcf07" name="变更" comment="新增一些组件">
-      <change afterPath="$PROJECT_DIR$/.idea/junitgenerator-prj-settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/basic/border/AnimatedBorder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/basic/border/RippleBorder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/data/label/DropCapLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/data/label/badge/BadgePosition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/data/label/badge/NumberBadgeLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/data/label/badge/NumberBadgeLayerUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/data/table/FixedColumnTablePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/data/table/listener/DragScrollingListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/form/area/HighlightCursorTextArea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/form/area/LineNumberView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/form/input/filter/FirstCharToUpperCaseDocumentFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/form/select/removable/ButtonsRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/form/select/removable/CellButtonsMouseListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/form/select/removable/RemoveButtonComboBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/navigation/tabs/hoverclosetab/CloseTabIcon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/navigation/tabs/hoverclosetab/HoverCloseButtonTabbedPane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/navigation/tabs/hoverclosetab/TabPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/navigation/tabs/listener/TabTitleEditListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/navigation/tabs/ui/IsoscelesTrapezoidTabbedPaneUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/notice/alert/LightboxGlassPane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/others/collapse/expandable/ExpandablePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/others/collapse/expandable/ExpansionEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/others/collapse/expandable/ExpansionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/others/collapse/expandable/ExpansionPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/others/line/TitledSeparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/others/menu/ReturnJMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/others/scrollbar/ScrollBackToTopIcon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/component/others/scrollbar/ScrollBackToTopLayerUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MainPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/basic/border/RippleBorderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/data/label/DropCapLabelTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/data/label/badge/NumberBadgeLabelTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/data/table/FixedColumnTablePanelTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/data/table/listener/DragScrollingListenerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/form/area/LineNumberViewTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/form/select/removable/RemoveButtonComboBoxTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/navigation/tabs/hoverclosetab/HoverCloseButtonTabbedPaneTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/navigation/tabs/listener/TabTitleEditListenerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/navigation/tabs/ui/IsoscelesTrapezoidTabbedPaneUITest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/notice/alert/LightboxGlassPaneTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/others/collapse/expandable/ExpandablePanelTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/others/line/TitledSeparatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/others/menu/ReturnJMenuTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/component/others/scrollbar/ScrollBackToTopLayerUITest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/action/DragSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/action/DragSourceMotionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/action/FileListFlavor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/action/GhostDragImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/action/MouseDrivenImageRotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/action/ReorderableList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/action/SelectWordAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/animator/AnimationUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/animator/EaseInOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/animator/GridScrollAnimation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/animator/SlideInNotificationWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/border/RadioButtonSelectedBorder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/button/OverlapBorderPaintLayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/button/RadialGradientButtonTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/button/ToggleButtonBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/combobox/DropDownHeightResizing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/combobox/DropdownTableComboBoxTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/combobox/HorizontalWrapComboPopup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/combobox/LRComboBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/combobox/UpdateComboBoxItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/editorpane/ElementAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/editorpane/FormSubmitEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/editorpane/FormViewInputComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/editorpane/HTMLAttributeID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/editorpane/InsertHtmlText.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/inputfield/JFormattedTextFieldTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/label/FiveStarRatingLabelTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/label/TextOverflowFadeLabelTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/table/FishEyeTableTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/table/GroupableTableHeaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/table/SliderInTableCellTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/table/StringPaintedCellProgressBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/table/TableCellHtmlHighlighter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/table/TablePagination.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/text/DrawsLayeredHighlights.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/text/GotoLine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/text/ScrollingMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/tree/DnDBetweenTrees.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/tree/DnDTreeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/tree/HighlightWordInNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/tree/OverlayBorderLayout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/tree/SearchBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/tree/TableOfContentsTreeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/tree/filesystemtreewithcheckbox/CheckBoxStatusUpdateListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/component/tree/filesystemtreewithcheckbox/FileSystemTreeWithCheckBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/other/ExtractFramesFromAnimatedGif.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/other/ResizableComponents.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/other/ZipFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/other/date/LocalDateFilterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/other/date/RoundedCornerTableHeader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/other/draw/MemoryImageSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/other/draw/PathIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/other/draw/RandomDissolveTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/other/draw/ScreenCapture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/other/frame/WindowShape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/other/layout/TextLayoutTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab/other/xml/SynthLookAndFeelTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/action/i03-04.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/action/i03-10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/action/wi0009-32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/action/wi0054-32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/action/wi0062-32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/action/wi0063-32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/action/wi0064-32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/action/wi0096-32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/action/wi0111-32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/action/wi0122-32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/action/wi0124-32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/action/wi0126-32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/component/button/test1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/component/button/test2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/component/button/test3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/component/editorpane/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/other/duke.running.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/lab/other/xml/button.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="ee1abc60-5042-4165-bc9b-3cb5daffcf07" name="变更" comment="第一版完善">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/basic/border/CentredBackgroundBorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/basic/border/CentredBackgroundBorder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/basic/link/LinkButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/basic/link/LinkButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/basic/link/LinkText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/basic/link/LinkText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/common/component/IconComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/common/component/IconComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/data/badge/BadgePanelGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/data/badge/BadgePanelGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/data/badge/BadgePopupFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/data/badge/BadgePopupFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/data/badge/LabelPopup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/data/badge/LabelPopup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/data/label/BadgeLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/data/label/badge/BadgeLabel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/font/FontUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/font/FontUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/form/input/InputAdviceInputField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/form/input/advice/InputAdviceInputField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/form/input/InputNumberField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/form/input/spinner/InputNumberField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/form/input/JSpinnerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/form/input/MultiSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/form/select/MultiSelector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/form/input/RoundFieldTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/form/input/StringAdviceInputField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/form/input/advice/StringAdviceInputField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/form/input/TimePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/form/input/spinner/TimePicker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/form/input/TipInputField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/common/component/BaseInputField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/form/input/compound/LabelIntegerInputField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/form/input/compound/LabelIntegerInputField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/form/input/listener/ComboKeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/form/input/listener/ComboKeyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/form/input/verifier/IntegerDocumentFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/form/input/filter/IntegerDocumentFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/form/input/verifier/IntegerInputVerifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/form/input/filter/IntegerInputVerifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/form/picket/DatePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/form/picket/DatePicker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/form/select/checked/WindowsCheckedComboBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/form/select/checked/WindowsCheckedComboBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/navigation/navmenu/NavList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/navigation/navmenu/NavList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/navigation/tabs/CustomTabbedPaneUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/navigation/tabs/ui/CustomTabbedPaneUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/notice/message/SystemMessageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/notice/message/SystemMessageFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/others/collapse/CollapsePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/others/collapse/CollapsePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/others/mask/DialogMask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/others/mask/DialogMask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/others/scrollbar/ScrollBarOnHoverScroll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/others/scrollbar/ScrollBarOnHoverScroll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/radiance/common/api/icon/RadianceIcon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/radiance/common/api/icon/RadianceIcon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/svg/app/BatchProcessFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/svg/app/BatchProcessFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/util/SwingTestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/util/SwingTestUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/animator/popup/PopupAnimatorGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/animator/popup/PopupAnimatorGroupTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/basic/border/AngleBorderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/basic/border/AngleBorderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/basic/border/CentredBackgroundBorderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/basic/border/CentredBackgroundBorderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/basic/border/ComponentTitledBorderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/basic/border/ComponentTitledBorderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/basic/border/IconBorderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/basic/border/IconBorderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/basic/border/RoundBorderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/basic/border/RoundBorderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/basic/button/ButtonFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/basic/button/ButtonFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/basic/button/IconButtonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/basic/button/IconButtonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/basic/button/RadioButtonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/basic/button/RadioButtonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/basic/button/RoundButtonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/basic/button/RoundButtonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/basic/button/SwitchButtonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/basic/button/SwitchButtonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/common/component/BackgroundComponentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/common/component/BackgroundComponentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/common/component/IconComponentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/common/component/IconComponentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/common/component/RoundComponentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/common/component/RoundComponentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/common/template/C2PanelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/common/template/C2PanelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/common/template/X2ComponentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/common/template/X2ComponentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/cursor/AnimatedCursorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/cursor/AnimatedCursorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/data/badge/BadgePanelGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/data/badge/BadgePanelGroupTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/data/badge/BadgePopupFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/data/badge/BadgePopupFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/data/empty/EmptyComponentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/data/empty/EmptyComponentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/data/label/BadgeLabelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/data/label/badge/BadgeLabelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/data/label/LabelFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/data/label/LabelFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/data/label/LineThroughLabelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/data/label/LineThroughLabelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/data/label/StrokeLabelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/data/label/StrokeLabelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/data/pagination/IconPaginationListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/data/pagination/IconPaginationListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/data/pagination/PaginationListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/data/pagination/PaginationListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/data/progress/CircleProgressTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/data/progress/CircleProgressTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/data/progress/LineRoundedProgressTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/data/progress/LineRoundedProgressTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/data/result/ResultFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/data/result/ResultFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/data/skeleton/SkeletonComponentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/data/skeleton/SkeletonComponentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/data/table/ETableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/data/table/ETableTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/data/table/render/TextAreaCellRendererTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/data/table/render/TextAreaCellRendererTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/data/tag/ETagTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/data/tag/ETagTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/data/tag/TagFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/data/tag/TagFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/font/FontTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/font/FontTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/form/input/BigDecimalSpinnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/form/input/model/BigDecimalSpinnerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/form/input/InputAdviceInputFieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/form/input/advice/InputAdviceInputFieldTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/form/input/InputNumberFieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/form/input/spinner/InputNumberFieldTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/form/input/JSpinnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/form/input/spinner/JSpinnerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/form/input/MultiSelectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/form/select/MultiSelectorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/form/input/RoundFieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/form/input/RoundFieldTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/form/input/StringAdviceInputFieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/form/input/advice/StringAdviceInputFieldTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/form/input/TimePickerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/form/input/spinner/TimePickerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/form/input/TipInputFieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/common/component/BaseInputFieldTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/form/input/compound/LabelComboBoxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/form/input/compound/LabelComboBoxTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/form/input/compound/LabelInputTextFieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/form/input/compound/LabelInputTextFieldTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/form/input/compound/LabelIntegerInputFieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/form/input/compound/LabelIntegerInputFieldTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/form/input/listener/ComboKeyHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/form/input/listener/ComboKeyHandlerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/form/input/verifier/VerifierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/form/input/filter/VerifierTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/form/list/TransferListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/form/list/TransferListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/form/picket/DatePickerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/form/picket/DatePickerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/form/rate/RateSelectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/form/rate/RateSelectorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/form/select/CascaderSelectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/form/select/CascaderSelectorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/form/upload/FileUploadItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/form/upload/FileUploadItemTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/form/upload/FileUploadPanelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/form/upload/FileUploadPanelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/form/upload/ImageUploadButtonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/form/upload/ImageUploadButtonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/form/upload/JXImageViewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/form/upload/JXImageViewTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/navigation/breadcrumb/BreadcrumbTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/navigation/breadcrumb/BreadcrumbTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/navigation/navmenu/NavListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/navigation/navmenu/NavListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/navigation/navmenu/NavPanelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/navigation/navmenu/NavPanelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/navigation/pageheader/PageHeaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/navigation/pageheader/PageHeaderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/navigation/steps/StepsComponentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/navigation/steps/StepsComponentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/navigation/tabs/CloseableTabTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/navigation/tabs/CloseableTabTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/navigation/tabs/TabbedPaneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/navigation/tabs/TabbedPaneTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/notice/alert/AlertComponentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/notice/alert/AlertComponentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/notice/alert/AlertFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/notice/alert/AlertFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/notice/loading/LoadingLabel2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/notice/loading/LoadingLabel2Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/notice/loading/LoadingLabel3Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/notice/loading/LoadingLabel3Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/notice/loading/LoadingLabelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/notice/loading/LoadingLabelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/notice/loading/LoadingPanelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/notice/loading/LoadingPanelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/notice/message/MessageFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/notice/message/MessageFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/notice/message/SystemMessageFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/notice/message/SystemMessageFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/notice/notification/NotificationComponentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/notice/notification/NotificationComponentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/notice/notification/NotificationFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/notice/notification/NotificationFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/others/card/CardPanelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/others/card/CardPanelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/basic/button/IconButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/basic/button/IconButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/others/carousel/CarouselCardLayoutPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/others/carousel/CarouselCardLayoutPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/component/others/carousel/CarouselCardLayoutPanelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/others/carousel/CarouselCardLayoutPanelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/others/carousel/HorizontalCarouselPanelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/others/carousel/HorizontalCarouselPanelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/others/carousel/SlideshowPanelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/others/carousel/SlideshowPanelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/others/collapse/CollapseItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/others/collapse/CollapseItemTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/others/collapse/CollapsePanelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/others/collapse/CollapsePanelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/others/collapse/JXTaskPaneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/others/collapse/JXTaskPaneTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/others/line/ArrowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/others/line/ArrowTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/others/line/DividerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/others/line/DividerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/others/line/LineLabelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/others/line/LineLabelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/others/popconfirm/PopConfirmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/others/popconfirm/PopConfirmTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/others/timeline/TimelineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/others/timeline/TimelineTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/others/tooltip/TooltipLabelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/others/tooltip/TooltipLabelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/basic/LinkDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/basic/LinkDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/data/LabelDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/data/LabelDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/data/badgeDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/data/badgeDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/form/InputDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/form/InputDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/display/navigation/NavigationDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/display/navigation/NavigationDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/component/button/CompoundButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab/component/button/CompoundButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/component/other/AnalogClock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab/other/AnalogClock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/component/other/animatedtray/AnimatedTrayIcon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab/other/animatedtray/AnimatedTrayIcon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/component/popup/AdjustPopupLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab/component/popup/AdjustPopupLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/component/table/AdjustRowHeightFillsViewport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab/component/table/AdjustRowHeightFillsViewport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/component/table/TableAddRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab/component/table/TableAddRow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/component/tree/DirectoryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab/component/tree/DirectoryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/cursor/AnimatedCursor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab/other/cursor/AnimatedCursor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/date/CalendarViewList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab/other/date/CalendarViewList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/date/CalendarViewTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab/other/date/CalendarViewTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/list/ButtonsInListCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab/component/list/ButtonsInListCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/other/ColumnModelPersistence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab/other/ColumnModelPersistence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/other/verifier/CellEditorInputVerifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab/other/verifier/CellEditorInputVerifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/lab/component/other/animatedtray/16x16.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/lab/other/animatedtray/16x16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/lab/component/other/animatedtray/16x16l.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/lab/other/animatedtray/16x16l.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/lab/component/other/animatedtray/16x16r.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/lab/other/animatedtray/16x16r.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,29 +43,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "last_opened_file_path": "D:/MyRoom/ProjectCollection/JAVA/ElementUI/src/test/resources/lab/other/xml",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.28275862",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit4&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/MyRoom/ProjectCollection/JAVA/ElementUI/src/test/resources/lab/other/xml&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.28275862&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/新建临时文件": [
-      "JAVA",
-      "Properties"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/新建临时文件&quot;: [
+      &quot;JAVA&quot;,
+      &quot;Properties&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\MyRoom\ProjectCollection\JAVA\ElementUI\src\test\resources\lab\other\xml" />
@@ -364,20 +104,13 @@
       <recent name="lab" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="ElementUI" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OverlapBorderPaintLayer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lab.component.button.OverlapBorderPaintLayer" />
+  <component name="RunManager" selected="应用程序.TooltipLabelTest">
+    <configuration name="PopConfirmTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.component.others.popconfirm.PopConfirmTest" />
       <module name="ElementUI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lab.component.border.*" />
+          <option name="PATTERN" value="com.component.others.popconfirm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -385,12 +118,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadialGradientButtonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lab.component.button.RadialGradientButtonTest" />
+    <configuration name="RectangleScrollBarUITest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.component.others.scrollbar.RectangleScrollBarUITest" />
       <module name="ElementUI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lab.component.border.*" />
+          <option name="PATTERN" value="com.component.others.scrollbar.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -398,12 +131,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioButtonSelectedBorder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lab.component.border.RadioButtonSelectedBorder" />
+    <configuration name="ScrollBackToTopLayerUITest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.component.others.scrollbar.ScrollBackToTopLayerUITest" />
       <module name="ElementUI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lab.component.border.*" />
+          <option name="PATTERN" value="com.component.others.scrollbar.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -411,12 +144,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ToggleButtonBar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lab.component.button.ToggleButtonBar" />
+    <configuration name="TooltipLabelTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.component.others.tooltip.TooltipLabelTest" />
       <module name="ElementUI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lab.component.button.*" />
+          <option name="PATTERN" value="com.component.others.tooltip.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TranslucentScrollTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.component.others.scrollbar.TranslucentScrollTest" />
+      <module name="ElementUI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.component.others.scrollbar.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -426,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Main" />
-        <item itemvalue="应用程序.ToggleButtonBar" />
-        <item itemvalue="应用程序.lab.component.border.RadioButtonSelectedBorder" />
-        <item itemvalue="应用程序.lab.component.button.RadialGradientButtonTest" />
-        <item itemvalue="应用程序.lab.component.button.OverlapBorderPaintLayer" />
+        <item itemvalue="应用程序.TooltipLabelTest" />
+        <item itemvalue="应用程序.TranslucentScrollTest" />
+        <item itemvalue="应用程序.ScrollBackToTopLayerUITest" />
+        <item itemvalue="应用程序.RectangleScrollBarUITest" />
+        <item itemvalue="应用程序.PopConfirmTest" />
       </list>
     </recent_temporary>
   </component>
@@ -463,7 +209,8 @@
       <workItem from="1667297206907" duration="17826000" />
       <workItem from="1667347357636" duration="7150000" />
       <workItem from="1667370582109" duration="614000" />
-      <workItem from="1667373027308" duration="5105000" />
+      <workItem from="1667373027308" duration="5671000" />
+      <workItem from="1667379442247" duration="3464000" />
     </task>
     <task id="LOCAL-00001" summary="1.0">
       <created>1666786717808</created>
@@ -640,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667231958828</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="第一版完善">
+      <created>1667379127444</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1667379127444</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,7 +416,8 @@
     <MESSAGE value="1.0" />
     <MESSAGE value="新增添加一些组件" />
     <MESSAGE value="新增一些组件" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增一些组件" />
+    <MESSAGE value="第一版完善" />
+    <option name="LAST_COMMIT_MESSAGE" value="第一版完善" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

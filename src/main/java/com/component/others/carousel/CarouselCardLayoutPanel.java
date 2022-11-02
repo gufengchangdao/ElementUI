@@ -20,19 +20,19 @@ public class CarouselCardLayoutPanel extends JPanel {
 	 * @param hgap 两侧面板绘制的宽度
 	 */
 	public CarouselCardLayoutPanel(int hgap) {
-		setLayout(cardLayout);
 		cardLayout = new CardLayout(hgap, 5);
+		setLayout(cardLayout);
 	}
 
 	@Override
 	protected void paintComponent(Graphics g) {
 		super.paintComponent(g);
-		for (Component c : getComponents()) {
-			if (c.isVisible()) {
-				paintSideComponents(g, getComponentZOrder(c));
-				return;
-			}
-		}
+		// for (Component c : getComponents()) {
+		// 	if (c.isVisible()) {
+		// 		paintSideComponents(g, getComponentZOrder(c));
+		// 		return;
+		// 	}
+		// }
 	}
 
 	/**
