@@ -27,9 +27,9 @@ public class ComponentTitledBorderTest {
 			JLabel l3 = new JLabel("ComponentTitledBorder + JButton");
 			l3.setBorder(new ComponentTitledBorder(b, l3, BorderFactory.createEtchedBorder()));
 
-			p.add(l1,"cell 0 0 1 2");
-			p.add(l2,"wrap");
-			p.add(l3,"wrap");
+			p.add(l1, "cell 0 0 1 2");
+			p.add(l2, "wrap");
+			p.add(l3, "wrap");
 			SwingTestUtil.test();
 		});
 	}

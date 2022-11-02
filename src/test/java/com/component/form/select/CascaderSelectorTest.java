@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class CascaderSelectorTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 
 			HashMap<String, Map<String, ?>> childNode2 = new HashMap<>();

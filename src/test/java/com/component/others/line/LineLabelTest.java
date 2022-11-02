@@ -7,7 +7,7 @@ import java.awt.*;
 
 public class LineLabelTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 			LineLabel lineLabel = new LineLabel(3);
 			lineLabel.setForeground(ColorUtil.PRIMARY);

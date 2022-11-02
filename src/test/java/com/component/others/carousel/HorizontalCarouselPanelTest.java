@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class HorizontalCarouselPanelTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 			SwingTestUtil.setDefaultTimingSource();
 			ArrayList<JPanel> list = new ArrayList<>();

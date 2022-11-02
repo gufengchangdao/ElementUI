@@ -4,14 +4,13 @@ import com.component.basic.color.ColorUtil;
 import com.component.util.SwingTestUtil;
 
 import javax.swing.*;
-
 import java.awt.*;
 
 import static com.component.basic.button.ButtonFactory.createDefaultButton;
 
 public class ButtonFactoryTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 
 			JButton button = createDefaultButton("点击我", ColorUtil.PRIMARY);

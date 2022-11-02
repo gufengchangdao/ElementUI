@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class CardPanelTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 			ArrayList<JButton> buttons = new ArrayList<>();
 			buttons.add(new JButton("操作按钮"));

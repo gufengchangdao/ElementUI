@@ -1,6 +1,6 @@
 package com.component.basic.border;
 
-import com.component.form.input.TipInputField;
+import com.component.common.component.BaseInputField;
 import com.component.svg.icon.fill.StarSvg;
 import com.component.util.SwingTestUtil;
 
@@ -9,9 +9,9 @@ import java.awt.*;
 
 public class IconBorderTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
-			TipInputField test = new TipInputField(15, "你好");
+			BaseInputField test = new BaseInputField(15, "你好");
 			IconBorder border = new IconBorder(test.getBorder(), StarSvg.of(16, 16), StarSvg.of(16, 16));
 			test.setBorder(border);
 			JButton button = new JButton("改变大小");

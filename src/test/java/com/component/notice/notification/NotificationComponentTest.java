@@ -9,7 +9,7 @@ import java.awt.*;
 
 public class NotificationComponentTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 
 			JLabel label = new JLabel("这是一条成功的提示消息");

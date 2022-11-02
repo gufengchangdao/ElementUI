@@ -23,7 +23,7 @@ public class CarouselCardLayoutPanelTest {
 			b1.addActionListener(e -> cards.last());
 			b2.addActionListener(e -> cards.next());
 			p.add(b1);
-			p.add(b2,"right");
+			p.add(b2, "right");
 
 			SwingTestUtil.test();
 		});

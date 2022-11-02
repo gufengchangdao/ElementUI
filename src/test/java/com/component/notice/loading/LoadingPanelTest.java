@@ -13,7 +13,7 @@ import java.awt.event.MouseEvent;
 
 public class LoadingPanelTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.setDefaultTimingSource();
 			SwingTestUtil.loadSkin();
 

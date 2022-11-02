@@ -12,7 +12,7 @@ import static com.component.common.SwingPosition.BOTTOM_RIGHT;
 
 public class AngleBorderTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 
 			JLabel label = new JLabel("这是文本");

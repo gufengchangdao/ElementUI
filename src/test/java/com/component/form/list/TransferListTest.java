@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 public class TransferListTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 
 			// TransferList list = new TransferList("水果", true, "请输入水果",

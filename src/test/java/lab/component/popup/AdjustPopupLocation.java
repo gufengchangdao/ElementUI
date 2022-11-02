@@ -54,7 +54,7 @@ public final class AdjustPopupLocation extends JPanel {
 	}
 
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.init(new FlowLayout()).add(new AdjustPopupLocation());
 			SwingTestUtil.test();
 		});

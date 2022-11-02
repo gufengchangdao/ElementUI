@@ -7,6 +7,7 @@ import java.util.Objects;
 
 /**
  * 带有复选框的下拉列表
+ *
  * @param <E>
  */
 public class WindowsCheckedComboBox<E extends CheckableItem> extends CheckedComboBox<E> {

@@ -7,7 +7,7 @@ import java.awt.*;
 
 public class ImageUploadButtonTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 			ImageUploadButton uploadButton = new ImageUploadButton();
 

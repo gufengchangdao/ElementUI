@@ -45,7 +45,7 @@ public class FontUtil {
 
 	/**
 	 * 引入外部字体
-	 *
+	 * <p>
 	 * 你可以通过引入外部字体充当图标。例如
 	 * <pre>
 	 * Font f = getFont("/font/fontawesome-webfont.ttf").deriveFont(20f);

@@ -9,7 +9,7 @@ import java.awt.*;
 
 public class AlertComponentTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 			SwingTestUtil.test(new AlertComponent(CheckCircleSvg.of(16, 16),
 					"成功提示的文案",

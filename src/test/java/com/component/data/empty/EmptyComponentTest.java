@@ -10,7 +10,7 @@ import java.awt.*;
 
 public class EmptyComponentTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 			// SwingTestUtils.test(new EmptyPanel(null, "暂无数据",
 			// 		ButtonFactory.createDefaultButton("按钮", ColorUtil.PRIMARY)));

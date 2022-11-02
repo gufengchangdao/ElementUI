@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 public class SlideshowPanelTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.setDefaultTimingSource();
 			SwingTestUtil.loadSkin();
 			SwingTestUtil.setSize(900, 200);

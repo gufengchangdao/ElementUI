@@ -8,7 +8,7 @@ import java.awt.*;
 
 public class BackgroundComponentTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 
 			BackgroundComponent c1 = new BackgroundComponent(XCircleSvg.of(100, 100));

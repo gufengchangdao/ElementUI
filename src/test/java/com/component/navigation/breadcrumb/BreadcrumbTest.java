@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class BreadcrumbTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 			ArrayList<String> list = new ArrayList<>();
 			list.add("首页");

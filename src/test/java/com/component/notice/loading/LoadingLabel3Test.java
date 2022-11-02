@@ -7,7 +7,7 @@ import java.awt.*;
 
 public class LoadingLabel3Test {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			JPanel p = SwingTestUtil.init(new FlowLayout(FlowLayout.CENTER));
 
 			LoadingLabel3 label = new LoadingLabel3();

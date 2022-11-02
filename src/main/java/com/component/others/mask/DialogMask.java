@@ -69,7 +69,7 @@ public class DialogMask implements ComponentListener {
 	/**
 	 * 调整遮罩位置
 	 */
-	public void adjustMaskPosition(){
+	public void adjustMaskPosition() {
 		Point l = container.getLocationOnScreen();
 		dialog.setBounds(new Rectangle(l.x, l.y, container.getWidth(), container.getHeight()));
 	}

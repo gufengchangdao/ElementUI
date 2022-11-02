@@ -3,7 +3,6 @@ package com.component.font;
 import com.component.util.SwingTestUtil;
 
 import javax.swing.*;
-import java.awt.*;
 
 public class FontTest {
 	public static void main(String[] args) {

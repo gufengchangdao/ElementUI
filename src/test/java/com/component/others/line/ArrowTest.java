@@ -29,7 +29,7 @@ public class ArrowTest {
 					g2.dispose();
 				}
 			};
-			panel.setPreferredSize(new Dimension(270,200));
+			panel.setPreferredSize(new Dimension(270, 200));
 
 			p.add(panel);
 			SwingTestUtil.test();

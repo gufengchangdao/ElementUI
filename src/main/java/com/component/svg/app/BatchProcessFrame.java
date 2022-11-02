@@ -2,7 +2,7 @@ package com.component.svg.app;
 
 import com.component.basic.button.ButtonFactory;
 import com.component.basic.color.ColorUtil;
-import com.component.form.input.TipInputField;
+import com.component.common.component.BaseInputField;
 import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;
 
@@ -34,14 +34,14 @@ public class BatchProcessFrame extends JFrame {
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		// setSize(600, 500);
 		Container contentPane = getContentPane();
-		contentPane.setLayout(new MigLayout("wrap 2","grow"));
-		contentPane.add(dirField,"");
+		contentPane.setLayout(new MigLayout("wrap 2", "grow"));
+		contentPane.add(dirField, "");
 		contentPane.add(dirButton);
-		contentPane.add(targetField,"");
-		contentPane.add(targetButton,"growx");
-		contentPane.add(packageField,"wrap");
-		contentPane.add(button,"span 2, center, wrap");
-		contentPane.add(new JScrollPane(logArea),"span 2, growx, h :350:");
+		contentPane.add(targetField, "");
+		contentPane.add(targetButton, "growx");
+		contentPane.add(packageField, "wrap");
+		contentPane.add(button, "span 2, center, wrap");
+		contentPane.add(new JScrollPane(logArea), "span 2, growx, h :350:");
 		pack();
 		setLocationRelativeTo(null);
 	}
@@ -49,15 +49,15 @@ public class BatchProcessFrame extends JFrame {
 	private void initComponent() {
 		fc = new JFileChooser();
 		// 上部分
-		dirField = new TipInputField(35, "目录或文件名");//目录或文件名
+		dirField = new BaseInputField(35, "目录或文件名");//目录或文件名
 		dirButton = new JButton("选择svg所在目录或文件");
 		dirButton.setPreferredSize(new Dimension(160, 25));
 
-		targetField = new TipInputField(35, "文件生成目录");//生成目录
+		targetField = new BaseInputField(35, "文件生成目录");//生成目录
 		targetButton = new JButton("选择生成目录");
 		targetButton.setPreferredSize(new Dimension(160, 25));
 
-		packageField = new TipInputField(35, "类所在包名，例如 com.component");//类所在包名
+		packageField = new BaseInputField(35, "类所在包名，例如 com.component");//类所在包名
 
 		// 中部分
 

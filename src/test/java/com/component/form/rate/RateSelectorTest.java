@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 public class RateSelectorTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 			RateSelector rateSelector = new RateSelector();
 			// rateSelector.setIcon(FaceSmileFillSvg.of(16,16));

@@ -10,7 +10,7 @@ import java.util.Arrays;
 
 public class StepsComponentTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 			// StepsComponent c = new StepsComponent(List.of("步骤1", "步骤2", "步骤3", "步骤4", "步骤5"),
 			// 		// XCircleSvg.class,

@@ -6,6 +6,13 @@ Gitee地址：[ElementUI](https://gitee.com/vsroom/ElementUI.git)
 
 README文件飞书链接：[ElementUI](https://riw8lxejdn.feishu.cn/docx/Yoszdo08qooCAJxOKlQcS4hJnTg)
 
+分享我的一些笔记
+
+[Java动画、图形和极富客户端效果开发](https://riw8lxejdn.feishu.cn/docs/doccn6CtkXVYp1SeShXPlhXi5ie)
+
+[swingx包的使用](https://riw8lxejdn.feishu.cn/docs/doccnf2LNZY4XlZP0JScATPfR6g)
+
+[Swing高级部分](https://riw8lxejdn.feishu.cn/docx/doxcn3g4xGl2DMSdXV0yRvgDSJb)
 
 ## 前言
 
@@ -41,16 +48,16 @@ miglayout 功能强大的布局管理器
 
 ```Java
 EventQueue.invokeLater(()->{
-    // 创建计时源并启动
-    SwingTimerTimingSource ts=new SwingTimerTimingSource();
-    Animator.setDefaultTimingSource(ts);
-    ts.init();
+		// 创建计时源并启动
+		SwingTimerTimingSource ts=new SwingTimerTimingSource();
+		Animator.setDefaultTimingSource(ts);
+		ts.init();
 
-    //注册UI
-    // FlatLightLaf.setup();
+		//注册UI
+		// FlatLightLaf.setup();
 
-    //启动程序
-});
+		//启动程序
+		});
 ```
 
 **目录结构**
@@ -148,8 +155,7 @@ EventQueue.invokeLater(()->{
 ## 运行预览
 
 - 演示所使用的美化包为**flatlaf**，项目中不要求使用该依赖
-- 该示例只展示扩展的组件，其实swingx依赖中还有很多好用的组件
-
+- 该示例只展示部分扩展的组件，还有其他一些实用的工具和swingx自带的组件未展示
 
 1. Basic
 
@@ -167,9 +173,6 @@ EventQueue.invokeLater(()->{
 ![](https://i.niupic.com/images/2022/10/26/a9Pv.png)
 ![](https://i.niupic.com/images/2022/10/26/a9PB.png)
 
-
-
-
 3. navigation
 
 ![](https://i.niupic.com/images/2022/10/26/a9Pi.png)
@@ -184,13 +187,11 @@ EventQueue.invokeLater(()->{
 
 ![](https://i.niupic.com/images/2022/10/26/a9PD.png)
 
-
 5. Data
 
 ![](https://i.niupic.com/images/2022/10/26/a9Pl.png)
 ![](https://i.niupic.com/images/2022/10/26/a9PF.png)
 ![](https://i.niupic.com/images/2022/10/26/a9Pm.png)
-
 
 6. other
 
@@ -208,8 +209,15 @@ EventQueue.invokeLater(()->{
 ![](https://i.niupic.com/images/2022/10/26/a9PN.png)
 ![](https://i.niupic.com/images/2022/10/26/a9PO.png)
 
-
-
 7. 字体
 
 resources下有两种字体，项目中并未使用，开发者可以使用FontUtil加载字体。同时字体也可以替代SVG充当图标，也许在图文混合的场景下使用更方便。
+
+## 参考
+
+- 《Java动画、图形和极富客户端效果开发》
+- [radiance](https://github.com/kirill-grouchnikov/radiance)
+- [TabComponentsDemo](http://download.oracle.com/javase/tutorial/uiswing/examples/components/index.html#TabComponentsDemo)
+- [组件 | Element](https://element.eleme.cn/#/zh-CN/component/upload)
+- [java-swing-tips](https://github.com/aterai/java-swing-tips.git)
+

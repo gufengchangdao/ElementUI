@@ -8,7 +8,7 @@ import java.io.File;
 
 public class FileUploadItemTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 			JList<File> list = new JList<>(new File[]{new File("file1.png"), new File("file2.png"), new File("file3.png")});
 			list.setCellRenderer(new FileUploadItem());

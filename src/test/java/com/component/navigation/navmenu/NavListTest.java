@@ -13,7 +13,7 @@ import java.util.HashMap;
  */
 public class NavListTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 			// 原有面板
 			JPanel contentPanel = new JPanel();

@@ -82,7 +82,7 @@ public final class AdjustRowHeightFillsViewport extends JPanel {
 	}
 
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.init(new FlowLayout()).add(new AdjustRowHeightFillsViewport());
 			SwingTestUtil.test();
 		});

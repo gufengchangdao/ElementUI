@@ -10,7 +10,7 @@ import java.awt.*;
 
 public class ETableTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 
 			String[][] s1 = {{"张三", "12346", "12"}, {"李四", "234561", "18"}, {"王五", "34561", "22"},

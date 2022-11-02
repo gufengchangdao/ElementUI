@@ -11,7 +11,6 @@ import java.awt.*;
  * 支持左右图标的组件
  * <p>
  * 该类跟 {@link IconBorder} 的区别在于IconBorder只是边框提供的图标，和应用边框的组件是一体的，
- * 无法为单独为图标设置点击事件
  */
 public class IconComponent<E extends JComponent> extends BaseComponent {
 	private RadianceIcon leftIcon;
@@ -34,7 +33,6 @@ public class IconComponent<E extends JComponent> extends BaseComponent {
 	 */
 	protected void init() throws RuntimeException {
 		setLayout(new BorderLayout());
-		System.out.println(component.getPreferredSize());
 		add(component);
 		// if (leftButton != null)
 		// 	add(leftButton,BorderLayout.WEST);
@@ -69,7 +67,6 @@ public class IconComponent<E extends JComponent> extends BaseComponent {
 	}
 
 	private static JButton updateIcon(JComponent container, String layout, JButton button, RadianceIcon icon) {
-		System.out.println("IconComponent.updateIcon()");
 		if (button == null) {
 			button = new JButton();
 			button.setBorderPainted(false);

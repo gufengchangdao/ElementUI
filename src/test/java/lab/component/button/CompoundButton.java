@@ -132,6 +132,7 @@ public class CompoundButton extends JButton {
 		return Objects.nonNull(shape) && shape.contains(x, y);
 	}
 }
+
 class CompoundButtonPanel extends JComponent {
 	private final Dimension dim;
 

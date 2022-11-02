@@ -26,7 +26,7 @@ public class TimelineTest extends StepsComponent {
 	}
 
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 
 			ArrayList<String> text = new ArrayList<>();

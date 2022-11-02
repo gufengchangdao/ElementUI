@@ -6,14 +6,13 @@ import com.component.svg.icon.fill.XCircleSvg;
 import com.component.util.SwingTestUtil;
 
 import javax.swing.*;
-
 import java.awt.*;
 
 import static com.component.notice.notification.NotificationFactory.openNotification;
 
 public class NotificationFactoryTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 			SwingTestUtil.setDefaultTimingSource();
 

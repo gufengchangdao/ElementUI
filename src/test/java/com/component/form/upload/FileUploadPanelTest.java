@@ -8,7 +8,7 @@ import java.io.File;
 
 public class FileUploadPanelTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 
 			FileUploadPanel panel = new FileUploadPanel("上传文件", "文件大小不要超过20M");

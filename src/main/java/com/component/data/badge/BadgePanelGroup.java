@@ -1,7 +1,7 @@
 package com.component.data.badge;
 
 import com.component.common.template.C2PLPGroup;
-import com.component.data.label.BadgeLabel;
+import com.component.data.label.badge.BadgeLabel;
 
 import javax.swing.*;
 import java.awt.*;

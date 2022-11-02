@@ -14,7 +14,7 @@ import java.util.Objects;
 
 /**
  * 演示验证输入的几种方式
- *
+ * <p>
  * 主要有三种表现
  * <ul>
  *     <li>不合法的能输入，但是无法选中其他单元格，点其他地方有提示音，失去焦点时清空输入</li>
@@ -90,8 +90,8 @@ public class CellEditorInputVerifier extends JPanel {
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(() -> {
-			JPanel p = SwingTestUtil.init(new MigLayout("","grow"));
-			p.add(new CellEditorInputVerifier(),"growx");
+			JPanel p = SwingTestUtil.init(new MigLayout("", "grow"));
+			p.add(new CellEditorInputVerifier(), "growx");
 			SwingTestUtil.test();
 		});
 	}

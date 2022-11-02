@@ -13,7 +13,7 @@ import java.util.Objects;
  * 为给定JComboBox添加键盘监听器，实现带有输入建议的JComboBox
  * <p>
  * 注意，该类并没有实现监听列表元素变化的事件，建议列表元素不会改变，如果需要变化，可以获取到list手动更新
- *
+ * <p>
  * 快捷键
  * <ul>
  *     <li>右：补全</li>

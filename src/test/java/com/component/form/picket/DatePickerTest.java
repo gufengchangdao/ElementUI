@@ -9,7 +9,7 @@ import java.util.Calendar;
 
 public class DatePickerTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 			DatePicker view = new DatePicker(10, "选择日期");
 			JXMonthView monthView = view.getMonthView();

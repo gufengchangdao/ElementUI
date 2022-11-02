@@ -7,7 +7,7 @@ import java.awt.*;
 
 public class CloseableTabTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 
 			JTabbedPane tb = new JTabbedPane();

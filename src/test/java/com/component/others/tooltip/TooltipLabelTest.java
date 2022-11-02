@@ -9,7 +9,7 @@ import java.awt.*;
 
 public class TooltipLabelTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 			SwingTestUtil.setDefaultTimingSource();
 

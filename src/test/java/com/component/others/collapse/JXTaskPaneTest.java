@@ -12,7 +12,7 @@ import java.awt.*;
  */
 public class JXTaskPaneTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 
 			//一个将所有JXTaskPane放在一起的容器

@@ -10,7 +10,7 @@ import java.awt.event.MouseEvent;
 
 public class IconButtonTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 			IconButton b = new IconButton(XCircleSvg.of(16, 16),
 					com.component.svg.icon.fill.XCircleSvg.of(16, 16),

@@ -1,5 +1,6 @@
 package com.component.navigation.tabs;
 
+import com.component.navigation.tabs.ui.CustomTabbedPaneUI;
 import com.component.util.SwingTestUtil;
 
 import javax.swing.*;
@@ -10,7 +11,7 @@ import java.awt.*;
  */
 public class TabbedPaneTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 
 			JTabbedPane tb = new JTabbedPane();

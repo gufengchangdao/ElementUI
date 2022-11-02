@@ -9,7 +9,7 @@ import static com.component.notice.alert.AlertFactory.*;
 
 public class AlertFactoryTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 
 			SwingTestUtil.test(

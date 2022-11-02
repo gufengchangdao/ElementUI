@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicReference;
 
 public class BadgePopupFactoryTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 
 			JButton b = new JButton("给按钮添加标签");

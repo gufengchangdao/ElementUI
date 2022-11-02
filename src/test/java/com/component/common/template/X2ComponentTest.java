@@ -14,7 +14,7 @@ import java.awt.event.MouseEvent;
 
 public class X2ComponentTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 			RadianceIcon icon = CheckCircleSvg.of(16, 16);
 			icon.setColorFilter(color -> ColorUtil.SUCCESS);

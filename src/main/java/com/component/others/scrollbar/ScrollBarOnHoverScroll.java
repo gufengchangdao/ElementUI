@@ -1,15 +1,9 @@
 package com.component.others.scrollbar;
 
-import com.component.util.SwingTestUtil;
-import net.miginfocom.swing.MigLayout;
-
 import javax.swing.*;
 import javax.swing.plaf.LayerUI;
 import java.awt.*;
 import java.awt.event.MouseEvent;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.util.stream.IntStream;
 
 public class ScrollBarOnHoverScroll extends JPanel {
 	public final JPanel scrollBar = new JPanel();

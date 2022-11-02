@@ -7,7 +7,7 @@ import java.awt.*;
 
 public class IconPaginationListTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 
 			IconPaginationList list = new IconPaginationList(21);

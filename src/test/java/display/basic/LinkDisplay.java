@@ -20,7 +20,7 @@ public class LinkDisplay {
 		p.add(new LinkButton("信息链接", ColorUtil.INFO, null));
 
 		LinkButton b1 = new LinkButton("默认链接", null, ColorUtil.PRIMARY);
-		LinkButton b2 = new LinkButton("默认链接", null,null, ColorUtil.PRIMARY,null, false);
+		LinkButton b2 = new LinkButton("默认链接", null, null, ColorUtil.PRIMARY, null, false);
 
 		p.add(b1);
 		p.add(b2, "wrap");

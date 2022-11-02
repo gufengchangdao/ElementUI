@@ -7,7 +7,7 @@ import java.awt.*;
 
 public class LoadingLabelTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.setDefaultTimingSource();
 			SwingTestUtil.loadSkin();
 			SwingTestUtil.test(new LoadingLabel(CrosshairSvg.of(48, 48), 700));

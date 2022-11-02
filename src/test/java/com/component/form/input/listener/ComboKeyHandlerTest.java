@@ -1,6 +1,5 @@
 package com.component.form.input.listener;
 
-import com.component.common.component.DefaultListCellRenderer2;
 import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;
 

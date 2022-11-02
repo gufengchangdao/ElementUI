@@ -1,7 +1,7 @@
 package com.component.form.input.compound;
 
 import com.component.common.component.BaseComponent;
-import com.component.form.input.InputNumberField;
+import com.component.form.input.spinner.InputNumberField;
 
 import javax.swing.*;
 import java.awt.*;

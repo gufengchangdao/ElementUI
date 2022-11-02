@@ -7,7 +7,7 @@ import com.component.navigation.navmenu.NavPanel;
 import com.component.navigation.pageheader.PageHeader;
 import com.component.navigation.steps.StepsComponent;
 import com.component.navigation.tabs.CloseableTab;
-import com.component.navigation.tabs.CustomTabbedPaneUI;
+import com.component.navigation.tabs.ui.CustomTabbedPaneUI;
 import com.component.svg.icon.regular.ArrowFatRightSvg;
 import com.component.svg.icon.regular.XCircleSvg;
 import com.component.util.SwingTestUtil;

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class CollapsePanelTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 			SwingTestUtil.setDefaultTimingSource();
 			SwingTestUtil.setSize(600, 400);

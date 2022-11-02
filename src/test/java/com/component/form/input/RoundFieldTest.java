@@ -1,6 +1,7 @@
 package com.component.form.input;
 
 import com.component.basic.border.RoundBorder;
+import com.component.common.component.BaseInputField;
 import com.component.util.SwingTestUtil;
 
 import java.awt.*;
@@ -10,10 +11,10 @@ import java.awt.*;
  */
 public class RoundFieldTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 
-			TipInputField field = new TipInputField();
+			BaseInputField field = new BaseInputField();
 			field.setBorder(new RoundBorder(-1));
 			field.setPlaceholder("请输入关键词");
 			//消除矩形背景

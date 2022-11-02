@@ -1,7 +1,6 @@
 package lab.component.tree;
 
 import com.component.util.SwingTestUtil;
-import lab.other.ColumnModelPersistence;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
@@ -82,7 +81,7 @@ public class DirectoryTree extends JPanel {
 	public static void main(String[] args) {
 		EventQueue.invokeLater(() -> {
 			JPanel p = SwingTestUtil.init(new MigLayout("fill"));
-			p.add(new DirectoryTree(),"center, growy");
+			p.add(new DirectoryTree(), "center, growy");
 			SwingTestUtil.test();
 		});
 	}

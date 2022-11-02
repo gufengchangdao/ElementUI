@@ -8,7 +8,7 @@ import java.awt.*;
 
 public class StrokeLabelTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 			// com.tech.view.component.label.StrokeLabel label = new com.tech.view.component.label.StrokeLabel("测试标签描边");
 			// label.setFont(new Font("Courier New", Font.BOLD, 140));

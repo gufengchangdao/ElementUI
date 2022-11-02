@@ -7,7 +7,7 @@ import java.awt.*;
 
 public class PaginationListTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 
 			// page.add("长文本测试");

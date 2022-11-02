@@ -6,7 +6,7 @@ import java.awt.*;
 
 public class SkeletonComponentTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 			SkeletonComponent c = new SkeletonComponent(new Dimension(100, 30));
 			SwingTestUtil.test(c);

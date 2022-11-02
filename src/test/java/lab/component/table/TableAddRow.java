@@ -59,7 +59,7 @@ public final class TableAddRow extends JPanel {
 	}
 
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.init(new FlowLayout()).add(new TableAddRow());
 			SwingTestUtil.test();
 		});

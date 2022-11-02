@@ -7,7 +7,7 @@ import java.awt.*;
 
 public class RoundComponentTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 			JTextField field = new JTextField("你好");
 			field.setPreferredSize(new Dimension(200, 100));

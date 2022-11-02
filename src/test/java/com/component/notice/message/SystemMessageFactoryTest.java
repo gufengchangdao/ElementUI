@@ -44,7 +44,7 @@ public class SystemMessageFactoryTest {
 
 			JButton messageButton = new JButton("弹出消息");
 			messageButton.addActionListener(e -> {
-				SystemMessageFactory.openMessage("标题","正文",
+				SystemMessageFactory.openMessage("标题", "正文",
 						messageType.getItemAt(messageType.getSelectedIndex()));
 			});
 			p.add(messageType);

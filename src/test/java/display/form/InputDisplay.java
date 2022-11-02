@@ -1,10 +1,14 @@
 package display.form;
 
 import com.component.basic.border.RoundBorder;
-import com.component.form.input.*;
+import com.component.common.component.BaseInputField;
+import com.component.form.input.advice.InputAdviceInputField;
 import com.component.form.input.compound.LabelComboBox;
 import com.component.form.input.compound.LabelInputTextField;
 import com.component.form.input.compound.LabelIntegerInputField;
+import com.component.form.input.spinner.InputNumberField;
+import com.component.form.input.spinner.TimePicker;
+import com.component.form.select.MultiSelector;
 import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;
 
@@ -19,9 +23,9 @@ public class InputDisplay {
 		Container p = SwingTestUtil.init(new MigLayout("wrap 1", "grow"));
 
 		p.add(new JLabel("带有输入提示的输入框"));
-		TipInputField tipInputField = new TipInputField("");
-		tipInputField.setPlaceholder("请输入密码");
-		p.add(tipInputField, "center");
+		BaseInputField baseInputField = new BaseInputField("");
+		baseInputField.setPlaceholder("请输入密码");
+		p.add(baseInputField, "center");
 
 		p.add(new JLabel("带有输入建议的输入框"));
 		Vector<String> vector = new Vector<>();
@@ -39,7 +43,7 @@ public class InputDisplay {
 		p.add(new MultiSelector(vector), "center");
 
 		p.add(new JLabel("圆角输入框演示"));
-		TipInputField f = new TipInputField();
+		BaseInputField f = new BaseInputField();
 		f.setBorder(new RoundBorder(-1));
 		f.setPlaceholder("请输入关键词");
 		//消除矩形背景

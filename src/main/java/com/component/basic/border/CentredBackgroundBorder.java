@@ -1,11 +1,9 @@
 package com.component.basic.border;
 
 import com.component.util.GraphicsUtil;
-import org.jdesktop.swingx.util.GraphicsUtilities;
 
 import javax.swing.border.Border;
 import java.awt.*;
-import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
 
 /**
@@ -53,7 +51,7 @@ public class CentredBackgroundBorder implements Border {
 		int cx = (width - bufferedImage.getWidth()) / 2;
 		int cy = (height - bufferedImage.getHeight()) / 2;
 
-		g2.drawImage(bufferedImage,cx,cy,null);
+		g2.drawImage(bufferedImage, cx, cy, null);
 		// g2.translate(x, y);
 		// g2.drawRenderedImage(bufferedImage, AffineTransform.getTranslateInstance(cx, cy));
 		g2.dispose();

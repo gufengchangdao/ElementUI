@@ -1,10 +1,10 @@
 package display.data;
 
 import com.component.basic.color.ColorUtil;
-import com.component.data.label.BadgeLabel;
 import com.component.data.label.LabelFactory;
 import com.component.data.label.LineThroughLabel;
 import com.component.data.label.StrokeLabel;
+import com.component.data.label.badge.BadgeLabel;
 import com.component.font.FontUtil;
 import com.component.util.SwingTestUtil;
 import net.miginfocom.swing.MigLayout;

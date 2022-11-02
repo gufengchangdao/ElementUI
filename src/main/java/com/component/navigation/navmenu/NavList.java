@@ -139,7 +139,9 @@ public class NavList<E> extends JList<E> implements MouseMotionListener, MouseLi
 	public void mouseDragged(MouseEvent e) {
 
 	}
+
 	private int hoverIndex;
+
 	@Override
 	public void mouseMoved(MouseEvent e) {
 		hoverIndex = locationToIndex(e.getPoint());

@@ -34,7 +34,7 @@ public class LinkButton extends JButton implements MouseListener {
 	}
 
 	public LinkButton(String text, Color fg, Color hoverFGColor) {
-		this(text,  null, fg, hoverFGColor);
+		this(text, null, fg, hoverFGColor);
 	}
 
 	public LinkButton(String text, RadianceIcon icon, Color fg, Color hoverFGColor) {
@@ -69,7 +69,7 @@ public class LinkButton extends JButton implements MouseListener {
 		setOpaque(false);
 		setContentAreaFilled(false);
 		setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		setMargin(new Insets(0,0,0,0));
+		setMargin(new Insets(0, 0, 0, 0));
 		if (icon != null) {
 			colorFilter = color -> hoverFGColor;
 		}

@@ -1,7 +1,7 @@
 package com.component.data.badge;
 
 import com.component.basic.color.ColorUtil;
-import com.component.data.label.BadgeLabel;
+import com.component.data.label.badge.BadgeLabel;
 import com.component.util.SwingTestUtil;
 
 import javax.swing.*;

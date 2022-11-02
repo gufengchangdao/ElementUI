@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 public class LineRoundedProgressTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 
 			LineRoundedProgress pgbar = new LineRoundedProgress();

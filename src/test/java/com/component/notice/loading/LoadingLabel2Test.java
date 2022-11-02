@@ -9,7 +9,7 @@ import java.awt.event.MouseEvent;
 
 public class LoadingLabel2Test {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.setDefaultTimingSource();
 			SwingTestUtil.loadSkin();
 			LoadingLabel2 c = new LoadingLabel2(ColorUtil.PRIMARY, 4);

@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * 折叠面板
- *
+ * <p>
  * 通过折叠面板收纳内容区域
  */
 public class CollapsePanel extends BaseComponent {

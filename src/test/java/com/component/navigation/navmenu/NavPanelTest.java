@@ -11,7 +11,7 @@ import java.util.List;
 
 public class NavPanelTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 
 			JTabbedPane tabbedPane = new JTabbedPane();

@@ -13,7 +13,7 @@ import static java.awt.BorderLayout.NORTH;
 
 public class ETagTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 
 			RadianceIcon icon1 = XCircleSvg.of(16, 16);

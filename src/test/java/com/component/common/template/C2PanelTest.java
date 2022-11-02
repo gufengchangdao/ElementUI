@@ -8,7 +8,7 @@ import java.awt.*;
 
 public class C2PanelTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 
 			JPanel p = new JPanel(new WrapLayout());

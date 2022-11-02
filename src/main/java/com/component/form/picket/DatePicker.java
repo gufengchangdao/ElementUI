@@ -2,7 +2,7 @@ package com.component.form.picket;
 
 import com.component.basic.border.IconBorder;
 import com.component.basic.color.ColorUtil;
-import com.component.form.input.TipInputField;
+import com.component.common.component.BaseInputField;
 import com.component.radiance.common.api.icon.RadianceIcon;
 import com.component.svg.icon.regular.CalendarSvg;
 import org.jdesktop.swingx.JXMonthView;
@@ -28,7 +28,7 @@ import java.util.function.Function;
  * <p>
  * 这个类与JXDatePicker有些相像，JXDatePicker支持输入，这里类还没实现，但是比那个好看
  */
-public class DatePicker extends TipInputField implements MouseListener, DateSelectionListener {
+public class DatePicker extends BaseInputField implements MouseListener, DateSelectionListener {
 	private PopupFactory popupFactory;
 	private Popup popup;
 	/** 当前是否有弹出窗口 */

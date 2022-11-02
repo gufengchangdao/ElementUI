@@ -113,7 +113,7 @@ public class ColumnModelPersistence extends JPanel {
 	public static void main(String[] args) {
 		EventQueue.invokeLater(() -> {
 			JPanel p = SwingTestUtil.init(new MigLayout("fill"));
-			p.add(new ColumnModelPersistence(),"center, growy");
+			p.add(new ColumnModelPersistence(), "center, growy");
 			SwingTestUtil.test();
 		});
 	}

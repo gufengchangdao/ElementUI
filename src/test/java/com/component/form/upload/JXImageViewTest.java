@@ -106,7 +106,7 @@ public class JXImageViewTest extends JXImageView {
 	}
 
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 
 			JFrame frame = SwingTestUtil.getFrame();

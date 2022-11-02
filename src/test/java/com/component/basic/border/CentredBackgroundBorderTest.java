@@ -39,7 +39,7 @@ public class CentredBackgroundBorderTest {
 						ImageIO.read(CentredBackgroundBorderTest.class.getResourceAsStream("/img/beauty.jpg"))
 				));
 				scroll.getVerticalScrollBar().setUnitIncrement(25);
-				p.add(scroll,"growx, growy");
+				p.add(scroll, "growx, growy");
 
 				SwingTestUtil.test();
 			} catch (IOException e) {

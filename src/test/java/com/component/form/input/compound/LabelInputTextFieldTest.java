@@ -6,7 +6,7 @@ import java.awt.*;
 
 public class LabelInputTextFieldTest {
 	public static void main(String[] args) {
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			SwingTestUtil.loadSkin();
 			LabelInputTextField field = new LabelInputTextField("你好");
 			field.setPreferredSize(new Dimension(200, 200));
