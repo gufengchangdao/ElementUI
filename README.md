@@ -2,7 +2,7 @@
 
 项目网址：[ElementUI](https://github.com/gufengchangdao/ElementUI)
 
-第二代项目ElementUI2地址：[ElementUI](https://github.com/gufengchangdao/ElementUI2)
+第二代项目地址：[ElementUI2](https://github.com/gufengchangdao/ElementUI2)
 
 Gitee地址：[ElementUI](https://gitee.com/vsroom/ElementUI.git)
 
