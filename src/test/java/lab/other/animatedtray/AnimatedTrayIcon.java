@@ -59,7 +59,9 @@ public class AnimatedTrayIcon extends JFrame {
 			animator.stop();
 			SystemTray tray = SystemTray.getSystemTray();
 			// 回到第一张图片上
-			Stream.of(tray.getTrayIcons()).forEach(i -> i.setImage(images[0]));
+			Stream
+					.of(tray.getTrayIcons())
+					.forEach(i -> i.setImage(images[0]));
 		});
 
 		MenuItem item5 = new MenuItem("exit");

@@ -24,7 +24,8 @@ public class DirectoryTree extends JPanel {
 		FileSystemView fileSystemView = FileSystemView.getFileSystemView();
 		DefaultMutableTreeNode root = new DefaultMutableTreeNode();
 		DefaultTreeModel treeModel = new DefaultTreeModel(root);
-		Stream.of(fileSystemView.getRoots()).forEach(fileSystemRoot -> {
+		Stream.of(fileSystemView.getRoots())
+				.forEach(fileSystemRoot -> {
 			DefaultMutableTreeNode node = new DefaultMutableTreeNode(fileSystemRoot);
 			root.add(node);
 			Stream.of(fileSystemView.getFiles(fileSystemRoot, true))
@@ -124,7 +125,8 @@ class FolderSelectionListener implements TreeSelectionListener {
 					cancel(true);
 					return;
 				}
-				chunks.stream().map(DefaultMutableTreeNode::new)
+				chunks.stream()
+						.map(DefaultMutableTreeNode::new)
 						.forEach(child -> model.insertNodeInto(child, node, node.getChildCount()));
 				// model.reload(parent); // = model.nodeStructureChanged(parent);
 				// tree.expandPath(path);

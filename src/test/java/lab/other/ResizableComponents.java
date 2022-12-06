@@ -475,6 +475,9 @@ enum Directions {
 	abstract Rectangle getBounds(Rectangle rect, Point delta);
 
 	public static Optional<Directions> getByCursorType(int cursor) {
-		return EnumSet.allOf(Directions.class).stream().filter(d -> d.cursor == cursor).findFirst();
+		return EnumSet.allOf(Directions.class)
+				.stream()
+				.filter(d -> d.cursor == cursor)
+				.findFirst();
 	}
 }

@@ -21,16 +21,17 @@ public class FileSystemTreeWithCheckBox extends JPanel {
 		FileSystemView fileSystemView = FileSystemView.getFileSystemView();
 		DefaultMutableTreeNode root = new DefaultMutableTreeNode();
 		DefaultTreeModel treeModel = new DefaultTreeModel(root);
-		Stream.of(fileSystemView.getRoots()).forEach(fileSystemRoot -> {
-			CheckBoxNode check = new CheckBoxNode(fileSystemRoot, Status.DESELECTED);
-			DefaultMutableTreeNode node = new DefaultMutableTreeNode(check);
-			root.add(node);
-			Stream.of(fileSystemView.getFiles(fileSystemRoot, true))
-					.filter(File::isDirectory)
-					.map(file -> new CheckBoxNode(file, Status.DESELECTED))
-					.map(DefaultMutableTreeNode::new)
-					.forEach(node::add);
-		});
+		Stream.of(fileSystemView.getRoots())
+				.forEach(fileSystemRoot -> {
+					CheckBoxNode check = new CheckBoxNode(fileSystemRoot, Status.DESELECTED);
+					DefaultMutableTreeNode node = new DefaultMutableTreeNode(check);
+					root.add(node);
+					Stream.of(fileSystemView.getFiles(fileSystemRoot, true))
+							.filter(File::isDirectory)
+							.map(file -> new CheckBoxNode(file, Status.DESELECTED))
+							.map(DefaultMutableTreeNode::new)
+							.forEach(node::add);
+				});
 		treeModel.addTreeModelListener(new CheckBoxStatusUpdateListener());
 
 		JTree tree = new JTree(treeModel) {
