@@ -10,13 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee1abc60-5042-4165-bc9b-3cb5daffcf07" name="变更" comment="声明jdk的版本">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/component/tree/DirectoryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab/component/tree/DirectoryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/component/tree/filesystemtreewithcheckbox/FileSystemTreeWithCheckBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab/component/tree/filesystemtreewithcheckbox/FileSystemTreeWithCheckBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/other/ResizableComponents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab/other/ResizableComponents.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lab/other/animatedtray/AnimatedTrayIcon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab/other/animatedtray/AnimatedTrayIcon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/others/menu/ReturnJMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/others/menu/ReturnJMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,13 +102,13 @@
       <recent name="lab" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.ReturnJMenuTest">
-    <configuration name="ImageDisplayLayoutTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.component.basic.layout.ImageDisplayLayoutTest" />
+  <component name="RunManager" selected="应用程序.StepsComponentTest">
+    <configuration name="NavListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.component.navigation.navmenu.NavListTest" />
       <module name="ElementUI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.component.basic.layout.*" />
+          <option name="PATTERN" value="com.component.navigation.navmenu.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkButtonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.component.basic.link.LinkButtonTest" />
+    <configuration name="NavPanelTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.component.navigation.navmenu.NavPanelTest" />
       <module name="ElementUI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.component.basic.link.*" />
+          <option name="PATTERN" value="com.component.navigation.navmenu.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,12 +142,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TooltipListCellRendererTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.component.form.list.renderer.TooltipListCellRendererTest" />
+    <configuration name="StepsComponentTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.component.navigation.steps.StepsComponentTest" />
       <module name="ElementUI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.component.form.list.renderer.*" />
+          <option name="PATTERN" value="com.component.navigation.steps.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -175,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.StepsComponentTest" />
+        <item itemvalue="应用程序.NavPanelTest" />
+        <item itemvalue="应用程序.NavListTest" />
         <item itemvalue="应用程序.ReturnJMenuTest" />
         <item itemvalue="应用程序.TransferListTest" />
-        <item itemvalue="应用程序.TooltipListCellRendererTest" />
-        <item itemvalue="应用程序.LinkButtonTest" />
-        <item itemvalue="应用程序.ImageDisplayLayoutTest" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +221,8 @@
       <workItem from="1670055792282" duration="8763000" />
       <workItem from="1670123882784" duration="4590000" />
       <workItem from="1670222599449" duration="6758000" />
-      <workItem from="1670285270489" duration="3595000" />
+      <workItem from="1670285270489" duration="4189000" />
+      <workItem from="1670291197884" duration="1776000" />
     </task>
     <task id="LOCAL-00001" summary="1.0">
       <created>1666786717808</created>

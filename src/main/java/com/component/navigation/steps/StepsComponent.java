@@ -269,6 +269,9 @@ public class StepsComponent extends BaseComponent {
 		}
 
 		// 尚未开始样式
+		// 如果直接使用setItems设置item的数量，已完成数量由大变小，需要重绘第一条线条的颜色
+		if (currentStep == 0)
+			items.get(0).lineLabel.setForeground(notStartColor);
 		for (int i = max(currentStep + 1, 0); i < items.size(); i++) {
 			StepInfo info = items.get(i);
 			info.icon.setColorFilter(notStartColorFilter);
