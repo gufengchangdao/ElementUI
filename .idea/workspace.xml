@@ -11,7 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ee1abc60-5042-4165-bc9b-3cb5daffcf07" name="变更" comment="声明jdk的版本">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/component/others/menu/ReturnJMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/component/others/menu/ReturnJMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/component/notice/loading/LoadingPanelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/component/notice/loading/LoadingPanelTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,13 +102,13 @@
       <recent name="lab" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.StepsComponentTest">
-    <configuration name="NavListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.component.navigation.navmenu.NavListTest" />
+  <component name="RunManager" selected="应用程序.TooltipLabelTest">
+    <configuration name="CloseableTabTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.component.navigation.tabs.CloseableTabTest" />
       <module name="ElementUI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.component.navigation.navmenu.*" />
+          <option name="PATTERN" value="com.component.navigation.tabs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NavPanelTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.component.navigation.navmenu.NavPanelTest" />
+    <configuration name="ETableTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.component.data.table.ETableTest" />
       <module name="ElementUI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.component.navigation.navmenu.*" />
+          <option name="PATTERN" value="com.component.data.table.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,12 +129,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReturnJMenuTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.component.others.menu.ReturnJMenuTest" />
+    <configuration name="HoverCloseButtonTabbedPaneTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.component.navigation.tabs.hoverclosetab.HoverCloseButtonTabbedPaneTest" />
       <module name="ElementUI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.component.others.menu.*" />
+          <option name="PATTERN" value="com.component.navigation.tabs.hoverclosetab.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,12 +142,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StepsComponentTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.component.navigation.steps.StepsComponentTest" />
+    <configuration name="TableHeaderPopupRendererTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.component.data.table.render.TableHeaderPopupRendererTest" />
       <module name="ElementUI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.component.navigation.steps.*" />
+          <option name="PATTERN" value="com.component.data.table.render.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,12 +155,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransferListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.component.form.list.TransferListTest" />
+    <configuration name="TooltipLabelTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.component.others.tooltip.TooltipLabelTest" />
       <module name="ElementUI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.component.form.list.*" />
+          <option name="PATTERN" value="com.component.others.tooltip.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -170,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.StepsComponentTest" />
-        <item itemvalue="应用程序.NavPanelTest" />
-        <item itemvalue="应用程序.NavListTest" />
-        <item itemvalue="应用程序.ReturnJMenuTest" />
-        <item itemvalue="应用程序.TransferListTest" />
+        <item itemvalue="应用程序.TooltipLabelTest" />
+        <item itemvalue="应用程序.CloseableTabTest" />
+        <item itemvalue="应用程序.HoverCloseButtonTabbedPaneTest" />
+        <item itemvalue="应用程序.TableHeaderPopupRendererTest" />
+        <item itemvalue="应用程序.ETableTest" />
       </list>
     </recent_temporary>
   </component>
@@ -222,7 +222,8 @@
       <workItem from="1670123882784" duration="4590000" />
       <workItem from="1670222599449" duration="6758000" />
       <workItem from="1670285270489" duration="4189000" />
-      <workItem from="1670291197884" duration="1776000" />
+      <workItem from="1670291197884" duration="15113000" />
+      <workItem from="1670374595381" duration="722000" />
     </task>
     <task id="LOCAL-00001" summary="1.0">
       <created>1666786717808</created>

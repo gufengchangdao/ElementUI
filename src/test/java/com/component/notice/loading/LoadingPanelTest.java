@@ -22,7 +22,6 @@ public class LoadingPanelTest {
 			LoadingPanel<LoadingLabel2> panel = new LoadingPanel<>(
 					new LoadingLabel2(ColorUtil.PRIMARY, 3));
 			panel.setPreferredSize(new Dimension(400, 400));
-			panel.setBorder(BorderFactory.createLineBorder(Color.RED));
 			JFrame frame = SwingTestUtil.getFrame();
 			frame.setGlassPane(panel);
 
